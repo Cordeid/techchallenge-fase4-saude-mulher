@@ -1,0 +1,34 @@
+# === Visão computacional ===
+opencv-python>=4.9.0
+deepface>=0.0.93
+tf-keras>=2.16.0
+mediapipe>=0.10.14
+ultralytics>=8.2.0
+
+# === Áudio e transcrição ===
+openai-whisper>=20231117
+moviepy>=1.0.3
+
+# === AWS ===
+boto3>=1.34.0
+
+# === OpenAI API ===
+openai>=1.30.0
+
+# === LangGraph / LangChain ===
+langgraph>=0.2.0
+langchain-openai>=0.1.0
+
+# === Utilitários ===
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+pydantic>=2.7.0
+reportlab>=4.2.0
+
+# === Processamento de dados ===
+numpy>=1.26.0
+scikit-learn>=1.5.0
+
+# NOTA: NÃO inclui torch.
+# Instalar manualmente com suporte a Blackwell sm_120:
+# pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
