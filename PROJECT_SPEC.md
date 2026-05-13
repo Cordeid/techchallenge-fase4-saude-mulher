@@ -1,6 +1,6 @@
 # PROJECT_SPEC.md — Especificação Técnica e Roteiro de Execução
 
-Este documento contém a arquitetura completa do projeto e os **prompts sequenciais** que devem ser passados ao Claude Code em cada sessão de trabalho. Cada seção numerada (S1, S2, ...) corresponde a uma sessão.
+Este documento contém a arquitetura completa do projeto.
 
 
 ---
