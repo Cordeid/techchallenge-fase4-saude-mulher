@@ -11,7 +11,7 @@ Este documento contém a arquitetura completa do projeto.
                           ┌─────────────────────────┐
                           │  Entrada do usuário     │
                           │  - video_consulta.mp4   │
-                          │  - laudo.pdf (opcional) │
+                          │  - laudo.pdf  │
                           └────────────┬────────────┘
                                        │
                                        ▼
