@@ -2,7 +2,6 @@
 
 Este documento contém a arquitetura completa do projeto e os **prompts sequenciais** que devem ser passados ao Claude Code em cada sessão de trabalho. Cada seção numerada (S1, S2, ...) corresponde a uma sessão.
 
-> **Como usar:** Abra o Claude Code (`claude` no terminal). Copie e cole o bloco "PROMPT PARA O CLAUDE CODE" da sessão atual. Acompanhe o que ele faz, aprove edições, e ao final faça commit Git.
 
 ---
 
