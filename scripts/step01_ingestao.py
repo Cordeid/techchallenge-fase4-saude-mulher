@@ -31,10 +31,11 @@ def criar_estrutura_processada(caso_id: str):
     pasta_caso = DATA_PROCESSED / caso_id
 
     subpastas = [
+        "analise_prontuario",
         "audio",
-        "frames",
         "transcricao",
-        "relatorio"
+        "frames",
+        "relatorio_final"
     ]
 
     pasta_caso.mkdir(parents=True, exist_ok=True)

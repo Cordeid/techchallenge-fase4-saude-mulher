@@ -68,6 +68,7 @@ def salvar_json(dados: dict, caminho: Path):
 
 def carregar_resultados_caso(caso_path: Path) -> dict:
     transcricao = ler_texto(caso_path / "transcricao" / "transcription.txt")
+    analise_prontuario = ler_json(caso_path / "analise_prontuario" / "analise_prontuario.json")
     resumo_audio = ler_json(caso_path / "transcricao" / "resumo_ia.json")
     analise_emocional = ler_json(caso_path / "transcricao" / "analise_emocional.json")
     analise_video = ler_json(caso_path / "analise_video" / "resumo_video_ia.json")
@@ -76,6 +77,7 @@ def carregar_resultados_caso(caso_path: Path) -> dict:
 
     return {
         "caso_id": caso_path.name,
+        "analise_prontuario": analise_prontuario,
         "transcricao": transcricao,
         "resumo_audio": resumo_audio,
         "analise_emocional": analise_emocional,
@@ -152,7 +154,6 @@ Formato esperado:
     "score_video": {score_data['score_video']},
     "score_protocolar": {score_data['score_protocolar']},
     "necessita_revisao_humana": {str(score_data['necessita_revisao_humana']).lower()},
-    "penalidades_aplicadas": {json.dumps(score_data['penalidades_aplicadas'], ensure_ascii=False)},
     "avaliacao_comunicacao": "",
     "avaliacao_empatia": "",
     "avaliacao_humanizacao": "",
@@ -220,11 +221,9 @@ DADOS DO CASO
 
         resultado.update({
 
-            "score_base": score_data["score_base"],
-            "penalidade_total": score_data["penalidade_total"],
-
             "score_final": score_data["score_final"],
 
+            "score_prontuario": score_data["score_prontuario"],
             "score_audio": score_data["score_audio"],
             "score_emocional": score_data["score_emocional"],
             "score_video": score_data["score_video"],
@@ -235,12 +234,7 @@ DADOS DO CASO
 
             "necessita_revisao_humana": (
                 score_data["necessita_revisao_humana"]
-            ),
-
-            "penalidades_aplicadas": (
-                score_data["penalidades_aplicadas"]
             )
-
         })
 
         return resultado
@@ -288,7 +282,6 @@ def gerar_relatorio_markdown(resultado: dict) -> str:
     pontos_positivos = resultado.get("pontos_positivos", [])
     pontos_negativos = resultado.get("pontos_negativos", [])
     fatores_desconforto = resultado.get("fatores_desconforto", [])
-    penalidades = resultado.get("penalidades_aplicadas", [])
 
     def lista_md(itens):
         if not itens:
@@ -319,21 +312,11 @@ def gerar_relatorio_markdown(resultado: dict) -> str:
 
     ---
 
-    ## Composição do Score
-
-    | Item             |                               Valor |
-    | ---------------- | ----------------------------------: |
-    | Score Base       |       {resultado.get("score_base")} |
-    | Penalidade Total | {resultado.get("penalidade_total")} |
-    | Score Final      |      {resultado.get("score_final")} |
-
-    Penalidades aplicadas: {", ".join(resultado.get("penalidades_aplicadas", [])) or "Nenhuma"}
-    ---
-
     ## Scores por Dimensão
 
     | Dimensão            |                               Score |
     | ------------------- | ----------------------------------: |
+    | Prontuário          |      {resultado.get("score_prontuario")} |
     | Comunicação/Áudio   |      {resultado.get("score_audio")} |
     | Emoções             |  {resultado.get("score_emocional")} |
     | Vídeo/Comportamento |      {resultado.get("score_video")} |
@@ -353,12 +336,6 @@ def gerar_relatorio_markdown(resultado: dict) -> str:
 
     ---
 
-    ## Avaliação de Empatia
-
-    {resultado.get("avaliacao_empatia", "Não informado.")}
-
-    ---
-
     ## Avaliação de Humanização
 
     {resultado.get("avaliacao_humanizacao", "Não informado.")}
@@ -368,12 +345,6 @@ def gerar_relatorio_markdown(resultado: dict) -> str:
     ## Principais Alertas
 
     {lista_md(alertas)}
-
-    ---
-
-    ## Penalidades Aplicadas
-
-    {lista_md(penalidades)}
 
     ---
 
@@ -435,11 +406,13 @@ def calcular_score_final(dados: dict):
     # =========================
     # SCORES BASE
     # =========================
+    analise_prontuario = (dados.get("analise_prontuario", {}) or {})
     resumo_audio = (dados.get("resumo_audio", {}) or {})
     analise_emocional = (dados.get("analise_emocional", {}) or {})
     analise_video = (dados.get("analise_video", {}) or {})
     analise_protocolar = (dados.get("analise_protocolar", {}) or {})
 
+    score_prontuario = analise_prontuario.get("score_prontuario", 70)
     score_audio = resumo_audio.get("score_comunicacao", 70)
     score_emocional = analise_emocional.get("score_emocional", 70)
     score_video = analise_video.get("score_visual", 70)
@@ -449,50 +422,14 @@ def calcular_score_final(dados: dict):
     # SCORE BASE PONDERADO
     # =========================
     score_base = (
+        (score_prontuario * 0.20) +
         (score_audio * 0.25) +
-        (score_emocional * 0.20) +
-        (score_video * 0.20) +
-        (score_protocolar * 0.35)
+        (score_emocional * 0.10) +
+        (score_video * 0.15) +
+        (score_protocolar * 0.30)
     )
 
-    score_final = score_base
-
-    penalidades = []
-    penalidade_total = 0
-
-    # =========================
-    # Linguagem técnica excessiva
-    # =========================
-    comunicacao = analise_protocolar.get("comunicacao", {})
-    if comunicacao.get("linguagem_tecnica_excessiva", False):
-        penalidade_total += 15
-        penalidades.append("Linguagem técnica excessiva")
-
-    # =========================
-    # Comunicação inadequada
-    # =========================
-    avaliacao_comunicacao = (analise_emocional.get("avaliacao_comunicacao", "").lower())
-
-    if (
-        "ruim" in avaliacao_comunicacao or
-        "inadequada" in avaliacao_comunicacao or
-        "baixa" in avaliacao_comunicacao
-    ):
-
-        penalidade_total += 7
-        penalidades.append("Comunicação inadequada")  
-
-    score_final = round(
-        score_final - penalidade_total,
-        2
-    )
-
-
-    # =========================
-    # NORMALIZAÇÃO
-    # =========================
-
-    score_final = max(0, min(100, round(score_final)))
+    score_final = max(0, min(100, round(score_base)))
 
     # =========================
     # CLASSIFICAÇÃO
@@ -526,8 +463,8 @@ def calcular_score_final(dados: dict):
 
     return {
         "score_base": round(score_base, 2),
-        "penalidade_total": penalidade_total,
         "score_final": score_final,
+        "score_prontuario": score_prontuario,
         "score_audio": score_audio,
         "score_emocional": score_emocional,
         "score_video": score_video,
@@ -537,7 +474,6 @@ def calcular_score_final(dados: dict):
         "necessita_revisao_humana": (
             necessita_revisao_humana
         ),
-        "penalidades_aplicadas": penalidades
     }
 
 # =========================
