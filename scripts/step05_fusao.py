@@ -439,10 +439,10 @@ def calcular_score_final(dados: dict):
     analise_video = (dados.get("analise_video", {}) or {})
     analise_protocolar = (dados.get("analise_protocolar", {}) or {})
 
-    score_audio = max(50, resumo_audio.get("score_comunicacao", 70))
-    score_emocional = max(50, analise_emocional.get("score_emocional", 70))
-    score_video = max(50, analise_video.get("score_visual", 70))
-    score_protocolar = max(50, analise_protocolar.get("score_aderencia", 70))
+    score_audio = resumo_audio.get("score_comunicacao", 70)
+    score_emocional = analise_emocional.get("score_emocional", 70)
+    score_video = analise_video.get("score_visual", 70)
+    score_protocolar = analise_protocolar.get("score_aderencia", 70)    
 
     # =========================
     # SCORE BASE PONDERADO
@@ -460,7 +460,6 @@ def calcular_score_final(dados: dict):
     penalidade_total = 0
 
     # =========================
-    # REGRA 1
     # Linguagem técnica excessiva
     # =========================
     comunicacao = analise_protocolar.get("comunicacao", {})
@@ -469,59 +468,6 @@ def calcular_score_final(dados: dict):
         penalidades.append("Linguagem técnica excessiva")
 
     # =========================
-    # REGRA 2
-    # Empatia baixa
-    # =========================
-    humanizacao = analise_protocolar.get("humanizacao", {})
-    empatia = (humanizacao.get("empatia", "").lower())
-
-    if (
-        "baixa" in empatia or
-        "limitada" in empatia or
-        "insuficiente" in empatia
-    ):
-        penalidade_total += 10
-        penalidades.append("Empatia reduzida")  
-
-    # =========================
-    # REGRA 3
-    # Humanização baixa
-    # =========================
-
-    nivel_humanizacao = (humanizacao.get("nivel", "").lower())
-
-    if (
-        "baixo" in nivel_humanizacao or
-        "fria" in nivel_humanizacao or
-        "mecanizada" in nivel_humanizacao
-    ):
-
-        penalidade_total += 10
-        penalidades.append("Baixa humanização")
-
-    # =========================
-    # REGRA 4
-    # Avaliação emocional ausente
-    # =========================
-    avaliacao_emocional = analise_protocolar.get("avaliacao_emocional", {})
-
-    if not avaliacao_emocional.get("realizada", True):
-        penalidade_total += 5
-        penalidades.append("Avaliação emocional ausente")
-
-    # =========================
-    # REGRA 5
-    # Nível emocional elevado
-    # =========================
-    nivel_atencao = (analise_emocional.get("nivel_atencao", "").lower())
-
-    if "elevado" in nivel_atencao:
-
-        penalidade_total += 7
-        penalidades.append("Sinais emocionais relevantes")
-
-    # =========================
-    # REGRA 6
     # Comunicação inadequada
     # =========================
     avaliacao_comunicacao = (analise_emocional.get("avaliacao_comunicacao", "").lower())
@@ -533,55 +479,7 @@ def calcular_score_final(dados: dict):
     ):
 
         penalidade_total += 7
-        penalidades.append("Comunicação inadequada")
-
-    # =========================
-    # REGRA 7
-    # Sem confirmação de entendimento
-    # =========================
-
-    orientacao_final = analise_protocolar.get("orientacao_final", {})
-
-    if not orientacao_final.get("confirmacao_entendimento",True):
-        penalidade_total += 5
-        penalidades.append("Paciente sem confirmação de entendimento")
-
-    # =========================
-    # REGRA 8
-    # Sinais graves
-    # =========================
-    alertas = []
-    alertas.extend(resumo_audio.get("alertas", []))
-    alertas.extend(analise_emocional.get("alertas", []))
-    alertas.extend(analise_video.get("alertas", []))
-    alertas.extend(analise_protocolar.get("alertas", []))
-
-    texto_alertas = " ".join(alertas).lower()
-
-    sinais_graves = [
-        "humilhação",
-        "agressividade",
-        "intimidação",
-        "pressão psicológica",
-        "ameaça"
-    ]
-
-    if any(
-        termo in texto_alertas
-        for termo in sinais_graves
-    ):
-
-        score_final = min(score_final, 30)
-        penalidades.append("Sinais graves identificados")
-    
-
-    # =========================
-    # LIMITE DE PENALIDADES
-    # =========================
-    penalidade_total = min(
-        penalidade_total,
-        40
-    )
+        penalidades.append("Comunicação inadequada")  
 
     score_final = round(
         score_final - penalidade_total,

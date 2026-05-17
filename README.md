@@ -536,4 +536,4 @@ O sistema busca apoiar equipes hospitalares na identificação precoce de situa�
   Link: https://www.youtube.com/watch?v=UGP6Gwb7oLk
 
 - Caso 006 - 20° TEMFC Vídeo 4
-  Linl: https://www.youtube.com/watch?v=RG8Y28FBqFc
+  Link: https://www.youtube.com/watch?v=RG8Y28FBqFc
