@@ -101,25 +101,85 @@ def gerar_resumo(texto):
     print("Gerando resumo IA...")
 
     prompt = f"""
-Você é um auditor clínico especializado em qualidade comunicacional e humanização de consultas médicas.
+Você é um auditor clínico especializado em:
 
-Analise criticamente a consulta abaixo.
+- humanização do atendimento;
+- comunicação médica;
+- qualidade assistencial;
+- empatia clínica;
+- linguagem acessível;
+- desconforto psicológico em consultas de saúde da mulher.
+
+Sua tarefa é avaliar criticamente a comunicação da consulta.
+
+==================================
+CRITÉRIOS DE AVALIAÇÃO
+==================================
 
 Avalie:
+
 - empatia;
-- clareza;
-- humanização;
+- clareza das explicações;
 - escuta ativa;
+- humanização;
 - adaptação ao perfil da paciente;
 - excesso de termos técnicos;
-- qualidade comunicacional;
-- sinais de desconforto emocional.
+- validação emocional;
+- qualidade comunicacional geral.
+
+Considere NEGATIVO quando houver:
+
+- consulta fria ou mecanizada;
+- excesso de tecnicismo;
+- pouca adaptação ao nível da paciente;
+- interrupções excessivas;
+- falta de acolhimento;
+- ausência de validação emocional;
+- comunicação confusa;
+- tom distante;
+- pouca empatia;
+- postura excessivamente protocolar.
+
+==================================
+SCORE
+==================================
+
+O campo "score_comunicacao" deve ser um número inteiro de 0 a 100.
+
+Use esta escala:
+
+- 90-100:
+  Comunicação excelente, humanizada e empática.
+
+- 75-89:
+  Comunicação adequada, com pequenas falhas.
+
+- 60-74:
+  Comunicação razoável, mas com problemas perceptíveis.
+
+- 40-59:
+  Comunicação ruim, fria, técnica ou pouco empática.
+
+- 0-39:
+  Comunicação crítica, inadequada ou potencialmente danosa.
 
 IMPORTANTE:
+- Nunca utilize escala de 0 a 10.
+- O score deve refletir criticamente a qualidade humana da consulta.
+- Consultas frias ou excessivamente técnicas NÃO devem receber score alto.
+
+==================================
+RESTRIÇÕES
+==================================
+
 - Não faça diagnóstico clínico.
 - Não confirme violência.
-- Seja técnico e crítico.
-- Consultas frias ou excessivamente técnicas devem receber avaliação negativa.
+- Apenas identifique sinais de atenção.
+- Seja técnico, crítico e cauteloso.
+
+==================================
+FORMATO DE SAÍDA
+==================================
 
 Retorne APENAS JSON válido.
 
@@ -138,7 +198,9 @@ Formato:
     "score_comunicacao": 0
 }}
 
-TRANSCRIÇÃO:
+==================================
+TRANSCRIÇÃO
+==================================
 
 {texto}
 """
@@ -180,9 +242,22 @@ def gerar_analise_emocional(texto):
     print("Gerando análise emocional...")
 
     prompt = f"""
-Você é um auditor especializado em análise emocional e humanização de consultas médicas.
+Você é um auditor especializado em:
 
-Analise criticamente:
+- análise emocional;
+- comunicação clínica;
+- humanização do atendimento;
+- comportamento humano em consultas médicas;
+- desconforto psicológico em saúde da mulher.
+
+Sua tarefa é analisar criticamente os aspectos emocionais presentes na consulta.
+
+==================================
+CRITÉRIOS DE ANÁLISE
+==================================
+
+Avalie sinais de:
+
 - medo;
 - ansiedade;
 - insegurança;
@@ -191,15 +266,88 @@ Analise criticamente:
 - submissão;
 - constrangimento;
 - dificuldade de compreensão;
-- sinais de intimidação;
+- silêncio excessivo;
+- respostas curtas;
+- intimidação;
+- tensão emocional;
+- sofrimento emocional;
 - baixa empatia;
 - excesso de tecnicismo;
-- comunicação inadequada.
+- comunicação inadequada;
+- ausência de acolhimento emocional.
+
+Também avalie:
+
+- postura comunicacional do profissional;
+- validação emocional da paciente;
+- capacidade de escuta;
+- adaptação ao perfil da paciente;
+- clareza das explicações.
+
+Considere NEGATIVO quando houver:
+
+- comunicação fria ou mecanizada;
+- excesso de linguagem técnica;
+- pouca empatia;
+- pouca escuta ativa;
+- minimização das emoções da paciente;
+- ausência de validação emocional;
+- paciente aparentando desconforto recorrente;
+- respostas monossilábicas frequentes;
+- tom excessivamente protocolar.
+
+==================================
+NÍVEL DE ATENÇÃO
+==================================
+
+Use:
+
+- "baixo"
+- "moderado"
+- "elevado"
+
+Considere "elevado" quando houver múltiplos sinais emocionais relevantes.
+
+==================================
+SCORE
+==================================
+
+O campo "score_emocional" deve ser um número inteiro de 0 a 100.
+
+Use esta escala:
+
+- 90-100:
+  Ambiente emocional seguro, acolhedor e humanizado.
+
+- 75-89:
+  Boa condução emocional com pequenas falhas.
+
+- 60-74:
+  Condução emocional razoável, porém com desconfortos perceptíveis.
+
+- 40-59:
+  Consulta emocionalmente inadequada, fria ou pouco empática.
+
+- 0-39:
+  Ambiente emocional crítico, desconfortável ou potencialmente danoso.
 
 IMPORTANTE:
+- Nunca utilize escala de 0 a 10.
+- Consultas frias ou excessivamente técnicas devem receber score reduzido.
+- O score deve refletir criticamente o impacto emocional da interação.
+
+==================================
+RESTRIÇÕES
+==================================
+
 - Não faça diagnóstico psicológico.
 - Não confirme violência.
 - Apenas identifique sinais de atenção.
+- Seja técnico, crítico e cauteloso.
+
+==================================
+FORMATO DE SAÍDA
+==================================
 
 Retorne APENAS JSON válido.
 
@@ -218,7 +366,9 @@ Formato:
     "resumo_critico": ""
 }}
 
-TRANSCRIÇÃO:
+==================================
+TRANSCRIÇÃO
+==================================
 
 {texto}
 """

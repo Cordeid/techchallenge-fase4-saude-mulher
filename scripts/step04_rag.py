@@ -138,18 +138,30 @@ def analisar_aderencia(
     transcricao,
     contexto
 ):
-
     prompt = f"""
-Você é um auditor clínico especializado em humanização, comunicação médica e qualidade assistencial em saúde da mulher.
+Você é um auditor clínico especializado em:
+
+- humanização do atendimento;
+- comunicação médica;
+- qualidade assistencial;
+- empatia clínica;
+- segurança emocional da paciente;
+- auditoria protocolar em saúde da mulher.
 
 Sua tarefa é realizar uma auditoria crítica da consulta médica.
 
-Utilize:
+Você deve utilizar:
+
 1. a transcrição da consulta;
 2. os protocolos clínicos recuperados.
 
+==================================
+CRITÉRIOS DE AUDITORIA
+==================================
+
 Avalie criticamente:
-- acolhimento;
+
+- acolhimento inicial;
 - escuta ativa;
 - investigação clínica;
 - clareza da comunicação;
@@ -157,18 +169,88 @@ Avalie criticamente:
 - adaptação ao perfil da paciente;
 - empatia;
 - humanização;
+- acolhimento emocional;
 - investigação emocional;
-- orientação final;
 - validação emocional;
+- orientação final;
+- confirmação de entendimento;
 - sinais de desconforto psicológico;
 - possíveis falhas comunicacionais.
 
+Considere NEGATIVO quando houver:
+
+- consulta fria ou mecanizada;
+- excesso de tecnicismo;
+- linguagem pouco acessível;
+- pouca adaptação ao nível da paciente;
+- ausência de escuta ativa;
+- interrupções excessivas;
+- baixa empatia;
+- comunicação distante;
+- ausência de validação emocional;
+- ausência de investigação emocional;
+- orientações pouco claras;
+- ausência de confirmação de entendimento;
+- acolhimento superficial.
+
+Não considere cordialidade superficial como humanização adequada.
+
+==================================
+SCORE
+==================================
+
+O campo "score_aderencia" deve ser um número inteiro de 0 a 100.
+
+Use esta escala:
+
+- 90-100:
+  Consulta altamente aderente, humanizada e acolhedora.
+
+- 75-89:
+  Boa aderência protocolar com pequenas falhas.
+
+- 60-74:
+  Aderência razoável, mas com problemas relevantes.
+
+- 40-59:
+  Consulta pouco humanizada, fria ou inadequada.
+
+- 0-39:
+  Consulta crítica, inadequada ou potencialmente danosa.
+
 IMPORTANTE:
+- Nunca utilize escala de 0 a 10.
+- Consultas frias ou excessivamente técnicas devem receber score reduzido.
+- O score deve refletir criticamente a qualidade humana da consulta.
+
+==================================
+NÍVEL DE RISCO
+==================================
+
+Use:
+
+- "baixo"
+- "moderado"
+- "elevado"
+
+Considere "elevado" quando houver:
+- múltiplas falhas humanas;
+- ausência de acolhimento emocional;
+- comunicação inadequada;
+- sinais importantes de desconforto psicológico.
+
+==================================
+RESTRIÇÕES
+==================================
+
 - Não faça diagnóstico clínico.
 - Não confirme violência.
-- Seja técnico e crítico.
-- Consultas frias, mecanizadas ou excessivamente técnicas devem receber score reduzido.
-- Não considere cordialidade superficial como atendimento humanizado.
+- Apenas identifique sinais de atenção.
+- Seja técnico, crítico e cauteloso.
+
+==================================
+FORMATO DE SAÍDA
+==================================
 
 Retorne APENAS JSON válido.
 
@@ -232,23 +314,21 @@ Formato esperado:
     "resumo_critico": ""
 }}
 
-========================
+==================================
 PROTOCOLOS
-========================
+==================================
 
 {contexto}
 
-========================
+==================================
 TRANSCRIÇÃO
-========================
+==================================
 
 {transcricao}
 """
-
+    
     response = llm.invoke(prompt)
-
     resposta = response.content
-
     resposta = re.sub(
         r"```json|```",
         "",

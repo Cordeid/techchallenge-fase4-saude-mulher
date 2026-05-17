@@ -115,32 +115,112 @@ def analisar_emocoes(frame_path):
 def gerar_resumo_visual(analises):
 
     prompt = f"""
-Você é um auditor especializado em comportamento humano, comunicação não verbal e humanização de consultas médicas.
+Você é um auditor especializado em:
 
-Analise criticamente os dados visuais abaixo.
+- comportamento humano;
+- comunicação não verbal;
+- análise emocional visual;
+- humanização de consultas médicas;
+- desconforto psicológico em saúde da mulher.
+
+Sua tarefa é analisar criticamente os dados visuais gerados pela IA.
+
+==================================
+CRITÉRIOS DE ANÁLISE
+==================================
 
 Avalie:
+
 - emoções predominantes;
 - sinais de ansiedade;
 - medo;
 - tristeza;
 - desconforto emocional;
 - tensão;
-- postura comportamental;
+- retraimento;
+- insegurança;
+- expressões faciais negativas;
 - interação entre pessoas;
 - possível distanciamento emocional;
-- sinais de consulta mecanizada;
+- consulta mecanizada;
 - baixa humanização;
 - ausência de acolhimento;
 - sinais de pressão psicológica;
-- comunicação não verbal negativa.
+- comunicação não verbal negativa;
+- ambiente emocionalmente desconfortável.
+
+Também avalie:
+
+- coerência emocional geral da consulta;
+- predominância de emoções negativas;
+- postura comportamental do ambiente;
+- possíveis sinais de frieza relacional;
+- ausência de conexão humana.
+
+Considere NEGATIVO quando houver:
+
+- predominância de tristeza, medo ou raiva;
+- expressões recorrentes de tensão;
+- sinais de desconforto persistente;
+- interação fria;
+- ausência de sinais de acolhimento;
+- comportamento mecanizado;
+- ambiente emocionalmente distante;
+- sinais repetidos de sofrimento emocional.
+
+==================================
+NÍVEL DE ATENÇÃO
+==================================
+
+Use:
+
+- "baixo"
+- "moderado"
+- "elevado"
+
+Considere "elevado" quando houver múltiplos sinais visuais relevantes.
+
+==================================
+SCORE
+==================================
+
+O campo "score_visual" deve ser um número inteiro de 0 a 100.
+
+Use esta escala:
+
+- 90-100:
+  Ambiente visual acolhedor, seguro e humanizado.
+
+- 75-89:
+  Interação visual adequada com pequenas falhas.
+
+- 60-74:
+  Ambiente razoável, mas com desconfortos perceptíveis.
+
+- 40-59:
+  Ambiente visual frio, mecanizado ou emocionalmente inadequado.
+
+- 0-39:
+  Ambiente visual crítico, desconfortável ou potencialmente danoso.
 
 IMPORTANTE:
+- Nunca utilize escala de 0 a 10.
+- Não atribua score alto apenas por ausência de agressividade.
+- Consultas frias ou mecanizadas devem receber score reduzido.
+- O score deve refletir criticamente a qualidade emocional do ambiente visual.
+
+==================================
+RESTRIÇÕES
+==================================
+
 - Não faça diagnóstico psicológico.
 - Não confirme violência.
 - Apenas identifique sinais de atenção.
-- Seja técnico e crítico.
-- Não considere cordialidade superficial como humanização adequada.
+- Seja técnico, crítico e cauteloso.
+
+==================================
+FORMATO DE SAÍDA
+==================================
 
 Retorne APENAS JSON válido.
 
@@ -160,7 +240,9 @@ Formato:
     "resumo_critico": ""
 }}
 
-DADOS VISUAIS:
+==================================
+DADOS VISUAIS
+==================================
 
 {json.dumps(analises, ensure_ascii=False, indent=2)}
 """

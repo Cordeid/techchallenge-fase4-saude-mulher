@@ -327,6 +327,7 @@ def gerar_relatorio_markdown(resultado: dict) -> str:
     | Penalidade Total | {resultado.get("penalidade_total")} |
     | Score Final      |      {resultado.get("score_final")} |
 
+    Penalidades aplicadas: {", ".join(resultado.get("penalidades_aplicadas", [])) or "Nenhuma"}
     ---
 
     ## Scores por Dimensão
