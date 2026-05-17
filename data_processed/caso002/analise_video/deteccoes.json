@@ -1,0 +1,1981 @@
+[
+    {
+        "frame": "frame_0000.jpg",
+        "detections": [],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0001.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9063680171966553
+            },
+            {
+                "label": "person",
+                "confidence": 0.8726990818977356
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7885782122612
+            },
+            {
+                "label": "person",
+                "confidence": 0.7120296955108643
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4618312120437622
+            },
+            {
+                "label": "tv",
+                "confidence": 0.26931971311569214
+            },
+            {
+                "label": "tie",
+                "confidence": 0.2538300156593323
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0002.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8712765574455261
+            },
+            {
+                "label": "person",
+                "confidence": 0.8614686727523804
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7356817722320557
+            },
+            {
+                "label": "person",
+                "confidence": 0.7191218733787537
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5326454639434814
+            },
+            {
+                "label": "tie",
+                "confidence": 0.3792788088321686
+            },
+            {
+                "label": "person",
+                "confidence": 0.32019656896591187
+            },
+            {
+                "label": "chair",
+                "confidence": 0.26135334372520447
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0003.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.869621217250824
+            },
+            {
+                "label": "person",
+                "confidence": 0.8321078419685364
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7308099865913391
+            },
+            {
+                "label": "person",
+                "confidence": 0.6340208053588867
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4952441453933716
+            },
+            {
+                "label": "tie",
+                "confidence": 0.4756825268268585
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.4483306407928467
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2933497428894043
+            },
+            {
+                "label": "tv",
+                "confidence": 0.25879326462745667
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0004.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8674662113189697
+            },
+            {
+                "label": "person",
+                "confidence": 0.6902925968170166
+            },
+            {
+                "label": "chair",
+                "confidence": 0.657519519329071
+            },
+            {
+                "label": "person",
+                "confidence": 0.6442490220069885
+            },
+            {
+                "label": "chair",
+                "confidence": 0.482661634683609
+            },
+            {
+                "label": "tie",
+                "confidence": 0.26218777894973755
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0005.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8672247529029846
+            },
+            {
+                "label": "person",
+                "confidence": 0.8637925386428833
+            },
+            {
+                "label": "person",
+                "confidence": 0.8633874654769897
+            },
+            {
+                "label": "chair",
+                "confidence": 0.771902859210968
+            },
+            {
+                "label": "chair",
+                "confidence": 0.48949089646339417
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0006.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8776399493217468
+            },
+            {
+                "label": "person",
+                "confidence": 0.7723982930183411
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6832867860794067
+            },
+            {
+                "label": "person",
+                "confidence": 0.6522799134254456
+            },
+            {
+                "label": "tie",
+                "confidence": 0.4268454313278198
+            },
+            {
+                "label": "tv",
+                "confidence": 0.3494284152984619
+            },
+            {
+                "label": "chair",
+                "confidence": 0.33465519547462463
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3161868453025818
+            },
+            {
+                "label": "chair",
+                "confidence": 0.26200276613235474
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0007.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.81793612241745
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7337666153907776
+            },
+            {
+                "label": "person",
+                "confidence": 0.7295251488685608
+            },
+            {
+                "label": "person",
+                "confidence": 0.6520394682884216
+            },
+            {
+                "label": "tie",
+                "confidence": 0.5901332497596741
+            },
+            {
+                "label": "person",
+                "confidence": 0.5562772154808044
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5363852381706238
+            },
+            {
+                "label": "person",
+                "confidence": 0.5004563331604004
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.2925591468811035
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0008.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8152064681053162
+            },
+            {
+                "label": "person",
+                "confidence": 0.7960788011550903
+            },
+            {
+                "label": "person",
+                "confidence": 0.7642201781272888
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7471982836723328
+            },
+            {
+                "label": "tie",
+                "confidence": 0.48183557391166687
+            },
+            {
+                "label": "chair",
+                "confidence": 0.45453691482543945
+            },
+            {
+                "label": "chair",
+                "confidence": 0.40947261452674866
+            },
+            {
+                "label": "tv",
+                "confidence": 0.331236869096756
+            },
+            {
+                "label": "chair",
+                "confidence": 0.28446435928344727
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.2599104642868042
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0009.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.7831193208694458
+            },
+            {
+                "label": "person",
+                "confidence": 0.7196105122566223
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6893332004547119
+            },
+            {
+                "label": "person",
+                "confidence": 0.6791133880615234
+            },
+            {
+                "label": "tie",
+                "confidence": 0.4930591285228729
+            },
+            {
+                "label": "chair",
+                "confidence": 0.40362298488616943
+            },
+            {
+                "label": "chair",
+                "confidence": 0.39917102456092834
+            },
+            {
+                "label": "chair",
+                "confidence": 0.31239068508148193
+            },
+            {
+                "label": "chair",
+                "confidence": 0.27027758955955505
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.26641765236854553
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0010.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8186883330345154
+            },
+            {
+                "label": "person",
+                "confidence": 0.5565774440765381
+            },
+            {
+                "label": "person",
+                "confidence": 0.5547415018081665
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4902990162372589
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4413371980190277
+            },
+            {
+                "label": "person",
+                "confidence": 0.4068577289581299
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3373067080974579
+            },
+            {
+                "label": "chair",
+                "confidence": 0.31243687868118286
+            },
+            {
+                "label": "tie",
+                "confidence": 0.28928592801094055
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0011.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8692340850830078
+            },
+            {
+                "label": "person",
+                "confidence": 0.8484591841697693
+            },
+            {
+                "label": "person",
+                "confidence": 0.786565899848938
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7622082829475403
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5008965134620667
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.33832797408103943
+            },
+            {
+                "label": "chair",
+                "confidence": 0.31804004311561584
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0012.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8862988948822021
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7866190075874329
+            },
+            {
+                "label": "person",
+                "confidence": 0.7500003576278687
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5787242650985718
+            },
+            {
+                "label": "person",
+                "confidence": 0.5574071407318115
+            },
+            {
+                "label": "tie",
+                "confidence": 0.4322432577610016
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.3432483375072479
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.32477182149887085
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2733539342880249
+            },
+            {
+                "label": "tv",
+                "confidence": 0.2501564919948578
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0013.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8921924233436584
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7842246294021606
+            },
+            {
+                "label": "person",
+                "confidence": 0.717430830001831
+            },
+            {
+                "label": "chair",
+                "confidence": 0.58085036277771
+            },
+            {
+                "label": "tie",
+                "confidence": 0.5728275775909424
+            },
+            {
+                "label": "person",
+                "confidence": 0.5518994331359863
+            },
+            {
+                "label": "tv",
+                "confidence": 0.31095823645591736
+            },
+            {
+                "label": "person",
+                "confidence": 0.30148187279701233
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.28032049536705017
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0014.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.892275333404541
+            },
+            {
+                "label": "chair",
+                "confidence": 0.8400224447250366
+            },
+            {
+                "label": "person",
+                "confidence": 0.7108412384986877
+            },
+            {
+                "label": "person",
+                "confidence": 0.6719263195991516
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5720681548118591
+            },
+            {
+                "label": "tie",
+                "confidence": 0.47660037875175476
+            },
+            {
+                "label": "tv",
+                "confidence": 0.26444512605667114
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0015.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8843823671340942
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7903934717178345
+            },
+            {
+                "label": "person",
+                "confidence": 0.7215318083763123
+            },
+            {
+                "label": "person",
+                "confidence": 0.5519298911094666
+            },
+            {
+                "label": "person",
+                "confidence": 0.5347091555595398
+            },
+            {
+                "label": "chair",
+                "confidence": 0.47179868817329407
+            },
+            {
+                "label": "tie",
+                "confidence": 0.39516481757164
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0016.jpg",
+        "detections": [
+            {
+                "label": "chair",
+                "confidence": 0.7870602607727051
+            },
+            {
+                "label": "person",
+                "confidence": 0.7504938840866089
+            },
+            {
+                "label": "person",
+                "confidence": 0.7144048810005188
+            },
+            {
+                "label": "person",
+                "confidence": 0.684533953666687
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6372029781341553
+            },
+            {
+                "label": "person",
+                "confidence": 0.4786219596862793
+            },
+            {
+                "label": "tie",
+                "confidence": 0.4546954035758972
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.32338038086891174
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0017.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9140884280204773
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7384583950042725
+            },
+            {
+                "label": "person",
+                "confidence": 0.7063209414482117
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5009989738464355
+            },
+            {
+                "label": "person",
+                "confidence": 0.4917033016681671
+            },
+            {
+                "label": "tv",
+                "confidence": 0.41930627822875977
+            },
+            {
+                "label": "tie",
+                "confidence": 0.3217112123966217
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2533901035785675
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0018.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9087077975273132
+            },
+            {
+                "label": "person",
+                "confidence": 0.7858060002326965
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7702126502990723
+            },
+            {
+                "label": "person",
+                "confidence": 0.7369294762611389
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4678043723106384
+            },
+            {
+                "label": "tv",
+                "confidence": 0.31287598609924316
+            },
+            {
+                "label": "tie",
+                "confidence": 0.28375953435897827
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0019.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9059315323829651
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7508293390274048
+            },
+            {
+                "label": "person",
+                "confidence": 0.6934138536453247
+            },
+            {
+                "label": "person",
+                "confidence": 0.6018906831741333
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5512576103210449
+            },
+            {
+                "label": "tie",
+                "confidence": 0.39940309524536133
+            },
+            {
+                "label": "tv",
+                "confidence": 0.30537745356559753
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.2925412952899933
+            },
+            {
+                "label": "chair",
+                "confidence": 0.27431851625442505
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0020.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9054149389266968
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7189655900001526
+            },
+            {
+                "label": "person",
+                "confidence": 0.6833669543266296
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5549882650375366
+            },
+            {
+                "label": "person",
+                "confidence": 0.4993818998336792
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.3333195447921753
+            },
+            {
+                "label": "chair",
+                "confidence": 0.33033522963523865
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0021.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9068377017974854
+            },
+            {
+                "label": "person",
+                "confidence": 0.7348315715789795
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7173200249671936
+            },
+            {
+                "label": "person",
+                "confidence": 0.6039815545082092
+            },
+            {
+                "label": "chair",
+                "confidence": 0.523526668548584
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4651185870170593
+            },
+            {
+                "label": "tv",
+                "confidence": 0.33512112498283386
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3138062357902527
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0022.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.896530032157898
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7736406326293945
+            },
+            {
+                "label": "person",
+                "confidence": 0.7084658145904541
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5604614019393921
+            },
+            {
+                "label": "person",
+                "confidence": 0.5084913969039917
+            },
+            {
+                "label": "person",
+                "confidence": 0.4653189480304718
+            },
+            {
+                "label": "tie",
+                "confidence": 0.46169447898864746
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.3352281451225281
+            },
+            {
+                "label": "tv",
+                "confidence": 0.3048132061958313
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0023.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9149748086929321
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6648759245872498
+            },
+            {
+                "label": "person",
+                "confidence": 0.6382895708084106
+            },
+            {
+                "label": "person",
+                "confidence": 0.6030495166778564
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4306519329547882
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3453049659729004
+            },
+            {
+                "label": "chair",
+                "confidence": 0.34289902448654175
+            },
+            {
+                "label": "laptop",
+                "confidence": 0.3337549567222595
+            },
+            {
+                "label": "tv",
+                "confidence": 0.2952863574028015
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0024.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8948585391044617
+            },
+            {
+                "label": "person",
+                "confidence": 0.8837299942970276
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5658108592033386
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5495806932449341
+            },
+            {
+                "label": "tv",
+                "confidence": 0.4621461033821106
+            },
+            {
+                "label": "chair",
+                "confidence": 0.43416348099708557
+            },
+            {
+                "label": "chair",
+                "confidence": 0.398333340883255
+            },
+            {
+                "label": "person",
+                "confidence": 0.3362835943698883
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2580733001232147
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0025.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9027507305145264
+            },
+            {
+                "label": "person",
+                "confidence": 0.7849660515785217
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7503374218940735
+            },
+            {
+                "label": "person",
+                "confidence": 0.627214789390564
+            },
+            {
+                "label": "tie",
+                "confidence": 0.44835034012794495
+            },
+            {
+                "label": "chair",
+                "confidence": 0.38929280638694763
+            },
+            {
+                "label": "tv",
+                "confidence": 0.3069540858268738
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3065005838871002
+            },
+            {
+                "label": "person",
+                "confidence": 0.2924538254737854
+            },
+            {
+                "label": "person",
+                "confidence": 0.28593575954437256
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.2539101839065552
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0026.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9017102718353271
+            },
+            {
+                "label": "sink",
+                "confidence": 0.6300651431083679
+            },
+            {
+                "label": "person",
+                "confidence": 0.5650901794433594
+            },
+            {
+                "label": "person",
+                "confidence": 0.3106047809123993
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0027.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.92890864610672
+            },
+            {
+                "label": "person",
+                "confidence": 0.9109274744987488
+            },
+            {
+                "label": "sink",
+                "confidence": 0.6012340188026428
+            },
+            {
+                "label": "toothbrush",
+                "confidence": 0.28065523505210876
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0028.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9378252029418945
+            },
+            {
+                "label": "person",
+                "confidence": 0.875863790512085
+            },
+            {
+                "label": "sink",
+                "confidence": 0.5254944562911987
+            },
+            {
+                "label": "cell phone",
+                "confidence": 0.4787161350250244
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0029.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.91013503074646
+            },
+            {
+                "label": "person",
+                "confidence": 0.8960293531417847
+            },
+            {
+                "label": "sink",
+                "confidence": 0.5840396285057068
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0030.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.7377223372459412
+            },
+            {
+                "label": "person",
+                "confidence": 0.6899107694625854
+            },
+            {
+                "label": "sink",
+                "confidence": 0.5288447737693787
+            },
+            {
+                "label": "sink",
+                "confidence": 0.3145325183868408
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0031.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.6864317655563354
+            },
+            {
+                "label": "sink",
+                "confidence": 0.5048670172691345
+            },
+            {
+                "label": "person",
+                "confidence": 0.4901003837585449
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0032.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.7631632685661316
+            },
+            {
+                "label": "person",
+                "confidence": 0.5985946655273438
+            },
+            {
+                "label": "sink",
+                "confidence": 0.5800737738609314
+            },
+            {
+                "label": "person",
+                "confidence": 0.3787955343723297
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0033.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.7409937381744385
+            },
+            {
+                "label": "sink",
+                "confidence": 0.5325872898101807
+            },
+            {
+                "label": "person",
+                "confidence": 0.3488345444202423
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0034.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9232024550437927
+            },
+            {
+                "label": "person",
+                "confidence": 0.8814948201179504
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6552152633666992
+            },
+            {
+                "label": "tv",
+                "confidence": 0.39899781346321106
+            },
+            {
+                "label": "chair",
+                "confidence": 0.31086868047714233
+            },
+            {
+                "label": "laptop",
+                "confidence": 0.260404109954834
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0035.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8750827312469482
+            },
+            {
+                "label": "person",
+                "confidence": 0.7897174954414368
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7071879506111145
+            },
+            {
+                "label": "chair",
+                "confidence": 0.32091641426086426
+            },
+            {
+                "label": "tv",
+                "confidence": 0.2555788457393646
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0036.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8821712732315063
+            },
+            {
+                "label": "chair",
+                "confidence": 0.8363587260246277
+            },
+            {
+                "label": "person",
+                "confidence": 0.8259779214859009
+            },
+            {
+                "label": "tv",
+                "confidence": 0.35772743821144104
+            },
+            {
+                "label": "refrigerator",
+                "confidence": 0.2683223485946655
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0037.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8623110055923462
+            },
+            {
+                "label": "chair",
+                "confidence": 0.8247279524803162
+            },
+            {
+                "label": "person",
+                "confidence": 0.78886878490448
+            },
+            {
+                "label": "bowl",
+                "confidence": 0.41406503319740295
+            },
+            {
+                "label": "chair",
+                "confidence": 0.39441633224487305
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3463691473007202
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0038.jpg",
+        "detections": [],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0039.jpg",
+        "detections": [],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0040.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.91656094789505
+            },
+            {
+                "label": "person",
+                "confidence": 0.8275569677352905
+            },
+            {
+                "label": "person",
+                "confidence": 0.5292195081710815
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4832680821418762
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3187240660190582
+            },
+            {
+                "label": "tv",
+                "confidence": 0.273394912481308
+            },
+            {
+                "label": "remote",
+                "confidence": 0.2677284777164459
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2671516537666321
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0041.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8983712196350098
+            },
+            {
+                "label": "person",
+                "confidence": 0.830498456954956
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6707997918128967
+            },
+            {
+                "label": "person",
+                "confidence": 0.42916685342788696
+            },
+            {
+                "label": "person",
+                "confidence": 0.3905373513698578
+            },
+            {
+                "label": "tie",
+                "confidence": 0.3307128846645355
+            },
+            {
+                "label": "remote",
+                "confidence": 0.2852327823638916
+            },
+            {
+                "label": "cup",
+                "confidence": 0.26182422041893005
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0042.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9043816328048706
+            },
+            {
+                "label": "person",
+                "confidence": 0.7961371541023254
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7222590446472168
+            },
+            {
+                "label": "person",
+                "confidence": 0.6080109477043152
+            },
+            {
+                "label": "person",
+                "confidence": 0.4581013023853302
+            },
+            {
+                "label": "remote",
+                "confidence": 0.34686991572380066
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2521660029888153
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0043.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8795475363731384
+            },
+            {
+                "label": "person",
+                "confidence": 0.8310438990592957
+            },
+            {
+                "label": "person",
+                "confidence": 0.5801793336868286
+            },
+            {
+                "label": "chair",
+                "confidence": 0.4819560945034027
+            },
+            {
+                "label": "person",
+                "confidence": 0.46126481890678406
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.27902546525001526
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0044.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9126363396644592
+            },
+            {
+                "label": "person",
+                "confidence": 0.8047980666160583
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6133653521537781
+            },
+            {
+                "label": "person",
+                "confidence": 0.5409693121910095
+            },
+            {
+                "label": "remote",
+                "confidence": 0.4426410496234894
+            },
+            {
+                "label": "tie",
+                "confidence": 0.29344841837882996
+            },
+            {
+                "label": "toothbrush",
+                "confidence": 0.254581481218338
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0045.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9204878211021423
+            },
+            {
+                "label": "person",
+                "confidence": 0.8412773609161377
+            },
+            {
+                "label": "person",
+                "confidence": 0.6954934000968933
+            },
+            {
+                "label": "chair",
+                "confidence": 0.680300235748291
+            },
+            {
+                "label": "remote",
+                "confidence": 0.493247389793396
+            },
+            {
+                "label": "tie",
+                "confidence": 0.3684712052345276
+            },
+            {
+                "label": "tv",
+                "confidence": 0.2528817057609558
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0046.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9179414510726929
+            },
+            {
+                "label": "person",
+                "confidence": 0.853748619556427
+            },
+            {
+                "label": "person",
+                "confidence": 0.6008794903755188
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5927887558937073
+            },
+            {
+                "label": "chair",
+                "confidence": 0.41355183720588684
+            },
+            {
+                "label": "tie",
+                "confidence": 0.32129156589508057
+            },
+            {
+                "label": "chair",
+                "confidence": 0.26546511054039
+            },
+            {
+                "label": "tv",
+                "confidence": 0.2629406750202179
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0047.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.902570366859436
+            },
+            {
+                "label": "person",
+                "confidence": 0.7480652928352356
+            },
+            {
+                "label": "chair",
+                "confidence": 0.7179260849952698
+            },
+            {
+                "label": "person",
+                "confidence": 0.4954880177974701
+            },
+            {
+                "label": "chair",
+                "confidence": 0.31055107712745667
+            },
+            {
+                "label": "tie",
+                "confidence": 0.28393346071243286
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2760941982269287
+            },
+            {
+                "label": "remote",
+                "confidence": 0.2537192702293396
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0048.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9204524755477905
+            },
+            {
+                "label": "person",
+                "confidence": 0.7415602207183838
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6114605069160461
+            },
+            {
+                "label": "person",
+                "confidence": 0.42721736431121826
+            },
+            {
+                "label": "tie",
+                "confidence": 0.2774176299571991
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2687494456768036
+            },
+            {
+                "label": "person",
+                "confidence": 0.2652900218963623
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0049.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.918576717376709
+            },
+            {
+                "label": "person",
+                "confidence": 0.6159671545028687
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6079906225204468
+            },
+            {
+                "label": "tie",
+                "confidence": 0.39096975326538086
+            },
+            {
+                "label": "person",
+                "confidence": 0.3070749044418335
+            },
+            {
+                "label": "chair",
+                "confidence": 0.2920556366443634
+            },
+            {
+                "label": "chair",
+                "confidence": 0.27921155095100403
+            },
+            {
+                "label": "chair",
+                "confidence": 0.25086164474487305
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0050.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9155261516571045
+            },
+            {
+                "label": "person",
+                "confidence": 0.8129947781562805
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6033168435096741
+            },
+            {
+                "label": "person",
+                "confidence": 0.4007246196269989
+            },
+            {
+                "label": "person",
+                "confidence": 0.3739396631717682
+            },
+            {
+                "label": "tie",
+                "confidence": 0.3221110999584198
+            },
+            {
+                "label": "remote",
+                "confidence": 0.2914983034133911
+            },
+            {
+                "label": "tv",
+                "confidence": 0.27256879210472107
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0051.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9104111790657043
+            },
+            {
+                "label": "person",
+                "confidence": 0.8023008108139038
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6313926577568054
+            },
+            {
+                "label": "tie",
+                "confidence": 0.3678249418735504
+            },
+            {
+                "label": "person",
+                "confidence": 0.33016932010650635
+            },
+            {
+                "label": "chair",
+                "confidence": 0.31862300634384155
+            },
+            {
+                "label": "remote",
+                "confidence": 0.3002347946166992
+            },
+            {
+                "label": "person",
+                "confidence": 0.29165464639663696
+            },
+            {
+                "label": "chair",
+                "confidence": 0.27298423647880554
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0052.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9136936068534851
+            },
+            {
+                "label": "person",
+                "confidence": 0.6088666319847107
+            },
+            {
+                "label": "person",
+                "confidence": 0.5932534337043762
+            },
+            {
+                "label": "chair",
+                "confidence": 0.5521286725997925
+            },
+            {
+                "label": "tv",
+                "confidence": 0.3581385910511017
+            },
+            {
+                "label": "tie",
+                "confidence": 0.2965559959411621
+            },
+            {
+                "label": "remote",
+                "confidence": 0.2792699337005615
+            },
+            {
+                "label": "chair",
+                "confidence": 0.25770753622055054
+            },
+            {
+                "label": "chair",
+                "confidence": 0.25162065029144287
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0053.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9010164141654968
+            },
+            {
+                "label": "person",
+                "confidence": 0.8680144548416138
+            },
+            {
+                "label": "chair",
+                "confidence": 0.591697633266449
+            },
+            {
+                "label": "person",
+                "confidence": 0.4415976405143738
+            },
+            {
+                "label": "chair",
+                "confidence": 0.36617493629455566
+            },
+            {
+                "label": "remote",
+                "confidence": 0.32517340779304504
+            },
+            {
+                "label": "person",
+                "confidence": 0.2767999470233917
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0054.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9246035218238831
+            },
+            {
+                "label": "person",
+                "confidence": 0.8799105882644653
+            },
+            {
+                "label": "person",
+                "confidence": 0.8332048654556274
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6101114749908447
+            },
+            {
+                "label": "tie",
+                "confidence": 0.29880592226982117
+            },
+            {
+                "label": "remote",
+                "confidence": 0.2914380133152008
+            },
+            {
+                "label": "tv",
+                "confidence": 0.26457706093788147
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0055.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9175987839698792
+            },
+            {
+                "label": "person",
+                "confidence": 0.833477795124054
+            },
+            {
+                "label": "person",
+                "confidence": 0.7463431358337402
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3666701316833496
+            },
+            {
+                "label": "remote",
+                "confidence": 0.3449338972568512
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0056.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8495957851409912
+            },
+            {
+                "label": "person",
+                "confidence": 0.6373265385627747
+            },
+            {
+                "label": "sink",
+                "confidence": 0.4562136232852936
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.3346221148967743
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.2913420796394348
+            },
+            {
+                "label": "sink",
+                "confidence": 0.2874854803085327
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0057.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8176643252372742
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.5613883137702942
+            },
+            {
+                "label": "chair",
+                "confidence": 0.3155556619167328
+            }
+        ],
+        "dominant_emotion": "surprise"
+    },
+    {
+        "frame": "frame_0058.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8758882880210876
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.7871615886688232
+            },
+            {
+                "label": "chair",
+                "confidence": 0.6028400659561157
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0059.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8936808109283447
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.7991500496864319
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0060.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8816648125648499
+            },
+            {
+                "label": "chair",
+                "confidence": 0.8051634430885315
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.6826192140579224
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.6355317831039429
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0061.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8872479200363159
+            },
+            {
+                "label": "chair",
+                "confidence": 0.8352882862091064
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.7194356322288513
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0062.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8806182146072388
+            },
+            {
+                "label": "keyboard",
+                "confidence": 0.8070563077926636
+            },
+            {
+                "label": "chair",
+                "confidence": 0.34270212054252625
+            }
+        ],
+        "dominant_emotion": "happy"
+    }
+]

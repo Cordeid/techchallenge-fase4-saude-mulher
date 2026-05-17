@@ -1,0 +1,23 @@
+{
+    "contexto_geral": "A consulta apresenta uma comunicação que parece ser predominantemente técnica, com pouca atenção às necessidades emocionais e de compreensão da paciente. A interação carece de acolhimento e validação emocional, o que pode gerar desconforto na paciente.",
+    "empatia": "A empatia é baixa, pois o médico não demonstra compreensão em relação ao estresse da paciente e não valida suas preocupações sobre o fumo.",
+    "linguagem_tecnica": "O uso de termos técnicos é excessivo, como 'IgG', 'IGM' e 'reagente', sem explicações adequadas, o que pode dificultar a compreensão da paciente.",
+    "humanizacao": "A humanização é insuficiente, com uma abordagem mais mecanizada e protocolar, sem um acolhimento adequado.",
+    "escuta_ativa": "A escuta ativa é limitada, com interrupções e falta de atenção às respostas da paciente, especialmente em relação ao seu estresse e ao desejo de parar de fumar.",
+    "adaptacao_paciente": "A adaptação ao perfil da paciente é inadequada, pois o médico não ajusta a comunicação ao nível de compreensão da paciente, que parece confusa com os resultados dos exames.",
+    "pontos_positivos": [],
+    "pontos_negativos": [
+        "Consulta fria e mecanizada.",
+        "Excesso de tecnicismo sem explicação.",
+        "Pouca adaptação ao nível de compreensão da paciente.",
+        "Interrupções excessivas.",
+        "Falta de acolhimento e validação emocional.",
+        "Comunicação confusa e distante.",
+        "Baixa empatia e acolhimento."
+    ],
+    "alertas": [
+        "A paciente pode estar se sentindo desamparada e confusa em relação aos resultados dos exames.",
+        "A falta de validação emocional pode impactar negativamente a saúde mental da paciente."
+    ],
+    "score_comunicacao": 45
+}

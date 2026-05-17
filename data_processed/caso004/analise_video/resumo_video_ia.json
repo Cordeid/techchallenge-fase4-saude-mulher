@@ -1,0 +1,30 @@
+{
+    "emocao_predominante": "fear",
+    "nivel_atencao": "elevado",
+    "avaliacao_humanizacao": "Ambiente visual com baixa humanização, com predominância de emoções negativas.",
+    "avaliacao_comportamental": "Interações frias e mecanizadas, com sinais de desconforto emocional.",
+    "indicadores_visuais": [
+        "predominância de medo e tristeza em múltiplos frames",
+        "interações entre pessoas com expressões faciais negativas",
+        "sinais de ansiedade e tensão visíveis"
+    ],
+    "sinais_desconforto": [
+        "expressões faciais de medo e tristeza",
+        "tensão corporal observável",
+        "distanciamento emocional entre as pessoas"
+    ],
+    "alertas": [
+        "ambiente emocionalmente desconfortável",
+        "ausência de acolhimento e conexão humana"
+    ],
+    "pontos_positivos": [
+        "alguns frames mostram emoções neutras e felizes, mas são minoria"
+    ],
+    "pontos_negativos": [
+        "predominância de emoções negativas como medo e tristeza",
+        "sinais de pressão psicológica e desconforto persistente",
+        "comunicação não verbal negativa"
+    ],
+    "score_visual": 35,
+    "resumo_critico": "A análise dos dados visuais revela um ambiente de consulta médica com predominância de emoções negativas, especialmente medo e tristeza. As interações entre as pessoas são marcadas por frieza e falta de acolhimento, resultando em um ambiente emocionalmente desconfortável e mecanizado. A presença de sinais de ansiedade e tensão sugere a necessidade de uma abordagem mais humanizada nas consultas."
+}

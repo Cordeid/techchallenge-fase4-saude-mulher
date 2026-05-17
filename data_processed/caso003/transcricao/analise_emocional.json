@@ -1,0 +1,34 @@
+{
+    "emocoes_predominantes": [
+        "ansiedade",
+        "insegurança",
+        "desconforto psicológico"
+    ],
+    "sinais_emocionais": [
+        "medo",
+        "hesitação",
+        "silêncio excessivo",
+        "respostas curtas",
+        "tensão emocional",
+        "sofrimento emocional"
+    ],
+    "evidencias": [
+        "A paciente expressa preocupação com a dor ao amamentar e a saúde do bebê.",
+        "A paciente menciona que fica nervosa e que a situação está difícil para ela.",
+        "A interação entre a paciente e a profissional de saúde revela um tom de intimidação e falta de acolhimento."
+    ],
+    "nivel_atencao": "elevado",
+    "avaliacao_comunicacao": "A comunicação foi inadequada, com excessos de tecnicismo e falta de acolhimento emocional.",
+    "avaliacao_empatia": "A empatia foi baixa, com minimização das emoções da paciente e falta de validação.",
+    "fatores_desconforto": [
+        "A paciente se sente insegura e nervosa em relação à amamentação.",
+        "A profissional de saúde não demonstrou compreensão das dificuldades enfrentadas pela paciente.",
+        "A interação com a sogra e a falta de apoio emocional foram evidentes."
+    ],
+    "alertas": [
+        "A paciente pode estar em um estado emocional crítico devido à falta de suporte e compreensão.",
+        "A comunicação da profissional foi excessivamente técnica e não acolhedora."
+    ],
+    "score_emocional": 45,
+    "resumo_critico": "A consulta apresentou um ambiente emocional inadequado, com sinais claros de desconforto e falta de empatia. A comunicação foi fria e mecanizada, resultando em uma experiência negativa para a paciente, que se sentiu insegura e minimizada em suas preocupações."
+}

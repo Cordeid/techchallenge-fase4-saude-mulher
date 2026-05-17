@@ -1,0 +1,16 @@
+{
+    "qualidade_documental": "adequada",
+    "pontos_positivos": [
+        "Registro claro das queixas e comportamento da paciente.",
+        "Observações sobre o estado emocional da paciente foram bem documentadas.",
+        "Conduta médica inclui orientações para acompanhamento psicológico.",
+        "A abordagem acolhedora foi mencionada, demonstrando preocupação com a humanização."
+    ],
+    "pontos_negativos": [
+        "Alguns termos podem ser considerados excessivamente técnicos, como 'quadro ansioso' e 'componentes psicossociais'.",
+        "Registro mecanizado em algumas partes, como na descrição do exame físico.",
+        "Faltou uma investigação emocional mais aprofundada nas anotações."
+    ],
+    "score_prontuario": 70,
+    "analise_prontuario": "O prontuário apresenta uma qualidade documental adequada, com clareza nas anotações e uma boa organização das informações. No entanto, há espaço para melhorias na humanização e na linguagem utilizada, que pode ser simplificada para facilitar a compreensão. A documentação do sofrimento emocional é um ponto positivo, mas a investigação emocional poderia ser mais detalhada. A conduta médica está bem descrita, com orientações claras para o acompanhamento da paciente."
+}

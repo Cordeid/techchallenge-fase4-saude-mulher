@@ -1,0 +1,1218 @@
+[
+    {
+        "frame": "frame_0000.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.913600742816925
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.6769262552261353
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5875363945960999
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.48902627825737
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.37218382954597473
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.28164151310920715
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2535647749900818
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0001.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8968043923377991
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.6051234006881714
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5647730231285095
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3472346365451813
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3430332541465759
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2823505699634552
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0002.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9051333069801331
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.653074324131012
+            },
+            {
+                "label": "kite",
+                "confidence": 0.5419460535049438
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3564659059047699
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.35455113649368286
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3227318823337555
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.2970259189605713
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.25876471400260925
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0003.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8745360970497131
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.6240196824073792
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5889930129051208
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3591465950012207
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3354496955871582
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.32835525274276733
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.28900569677352905
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0004.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8763221502304077
+            },
+            {
+                "label": "kite",
+                "confidence": 0.5717930197715759
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.5329599380493164
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.48561158776283264
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.361295223236084
+            },
+            {
+                "label": "kite",
+                "confidence": 0.3298551142215729
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3179188668727875
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.30025023221969604
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.26393428444862366
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0005.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8045073747634888
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.6352290511131287
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5150601863861084
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.37753307819366455
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.3624541461467743
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3090392053127289
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2944500744342804
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0006.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.885841965675354
+            },
+            {
+                "label": "person",
+                "confidence": 0.7379964590072632
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.5552376508712769
+            },
+            {
+                "label": "person",
+                "confidence": 0.4897068738937378
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0007.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8838415145874023
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.8684369921684265
+            },
+            {
+                "label": "person",
+                "confidence": 0.6465070247650146
+            },
+            {
+                "label": "person",
+                "confidence": 0.2782960534095764
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.25970643758773804
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0008.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.904391884803772
+            },
+            {
+                "label": "person",
+                "confidence": 0.8530109524726868
+            },
+            {
+                "label": "person",
+                "confidence": 0.7504335641860962
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.434078186750412
+            },
+            {
+                "label": "person",
+                "confidence": 0.38423261046409607
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0009.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8670624494552612
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.8318085670471191
+            },
+            {
+                "label": "person",
+                "confidence": 0.7105415463447571
+            },
+            {
+                "label": "person",
+                "confidence": 0.30941563844680786
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0010.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9300634860992432
+            },
+            {
+                "label": "person",
+                "confidence": 0.9142308831214905
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0011.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8076657056808472
+            },
+            {
+                "label": "person",
+                "confidence": 0.7841348052024841
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.6762147545814514
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0012.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8692185878753662
+            },
+            {
+                "label": "person",
+                "confidence": 0.8658097982406616
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.6576895713806152
+            },
+            {
+                "label": "kite",
+                "confidence": 0.4351670742034912
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.30344629287719727
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3033241629600525
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0013.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8971092104911804
+            },
+            {
+                "label": "person",
+                "confidence": 0.6646785736083984
+            },
+            {
+                "label": "kite",
+                "confidence": 0.6582397222518921
+            },
+            {
+                "label": "kite",
+                "confidence": 0.5512847900390625
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.29413041472435
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0014.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9025731682777405
+            },
+            {
+                "label": "person",
+                "confidence": 0.8364599943161011
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5655021667480469
+            },
+            {
+                "label": "kite",
+                "confidence": 0.32807207107543945
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0015.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8641532063484192
+            },
+            {
+                "label": "person",
+                "confidence": 0.824797511100769
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5958471894264221
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0016.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8880935907363892
+            },
+            {
+                "label": "person",
+                "confidence": 0.8252837061882019
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.579412043094635
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.39903631806373596
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0017.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8851974606513977
+            },
+            {
+                "label": "person",
+                "confidence": 0.8108624219894409
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5579412579536438
+            },
+            {
+                "label": "kite",
+                "confidence": 0.4086623787879944
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2710501253604889
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0018.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8805837631225586
+            },
+            {
+                "label": "person",
+                "confidence": 0.8202353715896606
+            },
+            {
+                "label": "kite",
+                "confidence": 0.5426056385040283
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5394479036331177
+            },
+            {
+                "label": "kite",
+                "confidence": 0.45590725541114807
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.26273036003112793
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0019.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8660086393356323
+            },
+            {
+                "label": "person",
+                "confidence": 0.831170916557312
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5826267004013062
+            },
+            {
+                "label": "kite",
+                "confidence": 0.39123794436454773
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0020.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8833987712860107
+            },
+            {
+                "label": "person",
+                "confidence": 0.7555999159812927
+            },
+            {
+                "label": "kite",
+                "confidence": 0.6007811427116394
+            },
+            {
+                "label": "kite",
+                "confidence": 0.43159231543540955
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.31787046790122986
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2543177604675293
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0021.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9160526394844055
+            },
+            {
+                "label": "person",
+                "confidence": 0.8439604043960571
+            },
+            {
+                "label": "kite",
+                "confidence": 0.6327337622642517
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.3305155038833618
+            },
+            {
+                "label": "kite",
+                "confidence": 0.26041290163993835
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0022.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.8962972164154053
+            },
+            {
+                "label": "person",
+                "confidence": 0.8710458278656006
+            },
+            {
+                "label": "person",
+                "confidence": 0.7963907122612
+            },
+            {
+                "label": "person",
+                "confidence": 0.4460720419883728
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0023.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.9273059368133545
+            },
+            {
+                "label": "person",
+                "confidence": 0.872488260269165
+            },
+            {
+                "label": "person",
+                "confidence": 0.8223700523376465
+            },
+            {
+                "label": "person",
+                "confidence": 0.558820366859436
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0024.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.9320667386054993
+            },
+            {
+                "label": "person",
+                "confidence": 0.8634475469589233
+            },
+            {
+                "label": "person",
+                "confidence": 0.8076127171516418
+            },
+            {
+                "label": "person",
+                "confidence": 0.5344873666763306
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0025.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.8831329345703125
+            },
+            {
+                "label": "person",
+                "confidence": 0.8700916171073914
+            },
+            {
+                "label": "person",
+                "confidence": 0.7736709117889404
+            },
+            {
+                "label": "person",
+                "confidence": 0.5022094249725342
+            },
+            {
+                "label": "cell phone",
+                "confidence": 0.3897411525249481
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0026.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.9319184422492981
+            },
+            {
+                "label": "person",
+                "confidence": 0.7964473962783813
+            },
+            {
+                "label": "person",
+                "confidence": 0.7873591780662537
+            },
+            {
+                "label": "person",
+                "confidence": 0.5240532159805298
+            },
+            {
+                "label": "cell phone",
+                "confidence": 0.30585798621177673
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2519235908985138
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0027.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.9182754755020142
+            },
+            {
+                "label": "person",
+                "confidence": 0.8138127326965332
+            },
+            {
+                "label": "person",
+                "confidence": 0.8013404607772827
+            },
+            {
+                "label": "person",
+                "confidence": 0.377084344625473
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0028.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.9184485077857971
+            },
+            {
+                "label": "person",
+                "confidence": 0.8803531527519226
+            },
+            {
+                "label": "person",
+                "confidence": 0.7938752770423889
+            },
+            {
+                "label": "person",
+                "confidence": 0.539850652217865
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0029.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9032716751098633
+            },
+            {
+                "label": "person",
+                "confidence": 0.7789205312728882
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.6345097422599792
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3953562080860138
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0030.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8366912007331848
+            },
+            {
+                "label": "person",
+                "confidence": 0.8041097521781921
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5611048936843872
+            },
+            {
+                "label": "cup",
+                "confidence": 0.322711318731308
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3183663487434387
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2567252516746521
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0031.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.6944414377212524
+            },
+            {
+                "label": "person",
+                "confidence": 0.6415741443634033
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5837705135345459
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2695181965827942
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0032.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8753494620323181
+            },
+            {
+                "label": "person",
+                "confidence": 0.7581300735473633
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5415765047073364
+            },
+            {
+                "label": "kite",
+                "confidence": 0.5370001196861267
+            },
+            {
+                "label": "person",
+                "confidence": 0.2521137297153473
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0033.jpg",
+        "detections": [
+            {
+                "label": "potted plant",
+                "confidence": 0.8646752238273621
+            },
+            {
+                "label": "person",
+                "confidence": 0.8089457154273987
+            },
+            {
+                "label": "person",
+                "confidence": 0.7938896417617798
+            },
+            {
+                "label": "person",
+                "confidence": 0.7263277173042297
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0034.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9199801683425903
+            },
+            {
+                "label": "person",
+                "confidence": 0.8815068006515503
+            },
+            {
+                "label": "handbag",
+                "confidence": 0.31210604310035706
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0035.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9027715921401978
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0036.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8637354969978333
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0037.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8685277700424194
+            },
+            {
+                "label": "person",
+                "confidence": 0.7095639109611511
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2682884633541107
+            }
+        ],
+        "dominant_emotion": "fear"
+    },
+    {
+        "frame": "frame_0038.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8752133250236511
+            },
+            {
+                "label": "person",
+                "confidence": 0.8231770396232605
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.7430790662765503
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2712329626083374
+            }
+        ],
+        "dominant_emotion": "happy"
+    },
+    {
+        "frame": "frame_0039.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.9026584625244141
+            },
+            {
+                "label": "person",
+                "confidence": 0.7599247694015503
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5469139814376831
+            },
+            {
+                "label": "kite",
+                "confidence": 0.5372002720832825
+            },
+            {
+                "label": "kite",
+                "confidence": 0.31184566020965576
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0040.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8885807991027832
+            },
+            {
+                "label": "person",
+                "confidence": 0.846858024597168
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5982255339622498
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.28102391958236694
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0041.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8598518371582031
+            },
+            {
+                "label": "person",
+                "confidence": 0.6647725701332092
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5443519949913025
+            },
+            {
+                "label": "kite",
+                "confidence": 0.5386658906936646
+            },
+            {
+                "label": "remote",
+                "confidence": 0.41837167739868164
+            },
+            {
+                "label": "person",
+                "confidence": 0.29030749201774597
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2826983332633972
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0042.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8915113210678101
+            },
+            {
+                "label": "person",
+                "confidence": 0.6106945276260376
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.560417115688324
+            },
+            {
+                "label": "person",
+                "confidence": 0.3822285830974579
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.28386494517326355
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0043.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8967128396034241
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5832613110542297
+            },
+            {
+                "label": "person",
+                "confidence": 0.5090736746788025
+            },
+            {
+                "label": "person",
+                "confidence": 0.34444063901901245
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0044.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8898606896400452
+            },
+            {
+                "label": "person",
+                "confidence": 0.7325323820114136
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.5971621870994568
+            },
+            {
+                "label": "person",
+                "confidence": 0.5713228583335876
+            }
+        ],
+        "dominant_emotion": "neutral"
+    },
+    {
+        "frame": "frame_0045.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8921105861663818
+            },
+            {
+                "label": "kite",
+                "confidence": 0.6457560658454895
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.6023240685462952
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.42540624737739563
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.32745611667633057
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2812349796295166
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.26956403255462646
+            }
+        ],
+        "dominant_emotion": "angry"
+    },
+    {
+        "frame": "frame_0046.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8745586276054382
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.6625187397003174
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.593316376209259
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.3878900110721588
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.37945473194122314
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2745724320411682
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.265151709318161
+            }
+        ],
+        "dominant_emotion": "sad"
+    },
+    {
+        "frame": "frame_0047.jpg",
+        "detections": [
+            {
+                "label": "person",
+                "confidence": 0.8622565865516663
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.6594051122665405
+            },
+            {
+                "label": "umbrella",
+                "confidence": 0.6177935004234314
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.4172501564025879
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2944296896457672
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.2876259386539459
+            },
+            {
+                "label": "bottle",
+                "confidence": 0.2745811641216278
+            },
+            {
+                "label": "potted plant",
+                "confidence": 0.25628921389579773
+            }
+        ],
+        "dominant_emotion": "angry"
+    }
+]

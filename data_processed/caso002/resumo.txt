@@ -1,0 +1,9 @@
+
+Caso: caso002
+
+Arquivos encontrados:
+- Vídeo: caso002.mp4
+- PDF: caso002.pdf
+
+Status:
+- Caso pronto para processamento

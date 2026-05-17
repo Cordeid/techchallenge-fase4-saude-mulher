@@ -1,0 +1,50 @@
+{
+    "caso_id": "caso003",
+    "risco_geral": "MODERADO",
+    "classificacao": "CRÍTICA",
+    "score_final": 50,
+    "score_audio": 45,
+    "score_emocional": 45,
+    "score_video": 35,
+    "score_protocolar": 45,
+    "necessita_revisao_humana": true,
+    "avaliacao_comunicacao": "A comunicação foi inadequada, com excessos de tecnicismo e falta de acolhimento emocional.",
+    "avaliacao_empatia": "A empatia foi baixa, com minimização das emoções da paciente e falta de validação.",
+    "avaliacao_humanizacao": "A humanização foi insuficiente, com a consulta se tornando mais uma troca de informações técnicas do que um espaço de acolhimento e suporte emocional.",
+    "linguagem_tecnica_excessiva": true,
+    "adaptacao_paciente": "A adaptação ao perfil da paciente foi inadequada, pois a médica não ajustou sua comunicação ao nível de compreensão da paciente.",
+    "principais_alertas": [
+        "A interação conflituosa entre a médica e a acompanhante pode impactar negativamente a experiência da paciente.",
+        "A falta de validação das preocupações da paciente pode levar a um aumento do desconforto psicológico."
+    ],
+    "evidencias_audio": [
+        "A paciente expressa preocupação com a dor ao amamentar e a saúde do bebê.",
+        "A paciente menciona que fica nervosa e que a situação está difícil para ela."
+    ],
+    "evidencias_video": [
+        "Predominância de expressões faciais tristes e sinais de tensão emocional.",
+        "Interações entre pessoas frias e distantes."
+    ],
+    "evidencias_protocolares": [
+        "A médica demonstrou impaciência e falta de empatia ao discutir a amamentação e a sugestão de mamadeira."
+    ],
+    "fatores_desconforto": [
+        "A paciente se sente insegura e nervosa em relação à amamentação.",
+        "A profissional de saúde não demonstrou compreensão das dificuldades enfrentadas pela paciente."
+    ],
+    "pontos_positivos": [
+        "Clareza do registro nas observações clínicas e orientações realizadas.",
+        "Completude documental com informações sobre o contexto familiar e desenvolvimento da criança."
+    ],
+    "pontos_negativos": [
+        "Consulta fria e mecanizada.",
+        "Excesso de tecnicismo.",
+        "Pouca adaptação ao nível da paciente.",
+        "Interrupções excessivas.",
+        "Falta de acolhimento.",
+        "Ausência de validação emocional."
+    ],
+    "recomendacao": "Revisar a abordagem comunicacional e a humanização do atendimento, priorizando a validação emocional e a adaptação da linguagem ao perfil da paciente.",
+    "resumo_executivo": "A consulta apresentou um ambiente emocional inadequado, com sinais claros de desconforto e falta de empatia. A comunicação foi fria e mecanizada, resultando em uma experiência negativa para a paciente, que se sentiu insegura e minimizada em suas preocupações.",
+    "score_prontuario": 75
+}

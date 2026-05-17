@@ -1,0 +1,33 @@
+{
+    "emocao_predominante": "tristeza",
+    "nivel_atencao": "elevado",
+    "avaliacao_humanizacao": "baixa",
+    "avaliacao_comportamental": "fria e mecanizada",
+    "indicadores_visuais": [
+        "predominância de emoções negativas como raiva e tristeza",
+        "interações frias entre as pessoas",
+        "sinais de desconforto emocional",
+        "expressões faciais negativas recorrentes"
+    ],
+    "sinais_desconforto": [
+        "tensão visível",
+        "retraimento",
+        "insegurança",
+        "sinais de pressão psicológica"
+    ],
+    "alertas": [
+        "ambiente emocionalmente desconfortável",
+        "ausência de acolhimento",
+        "comunicação não verbal negativa"
+    ],
+    "pontos_positivos": [
+        "algumas interações felizes em quadros específicos"
+    ],
+    "pontos_negativos": [
+        "predominância de emoções negativas",
+        "ambiente visual frio e mecanizado",
+        "sinais repetidos de sofrimento emocional"
+    ],
+    "score_visual": 35,
+    "resumo_critico": "A análise dos dados visuais revela um ambiente de consulta com predominância de emoções negativas, como raiva e tristeza, além de sinais de desconforto emocional e interação fria. A falta de acolhimento e a comunicação não verbal negativa indicam uma baixa humanização nas interações, resultando em um ambiente crítico e potencialmente danoso para os envolvidos."
+}

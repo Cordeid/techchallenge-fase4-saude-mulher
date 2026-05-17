@@ -1,0 +1,63 @@
+{
+    "acolhimento_inicial": {
+        "presente": true,
+        "qualidade": "insuficiente",
+        "evidencias": [
+            "A consulta começou com uma saudação, mas não houve um acolhimento mais profundo das preocupações da paciente."
+        ]
+    },
+    "escuta_ativa": {
+        "presente": true,
+        "qualidade": "deficiente",
+        "evidencias": [
+            "A paciente expressou várias preocupações, mas a médica interrompeu e não validou adequadamente as emoções da paciente."
+        ]
+    },
+    "investigacao_clinica": {
+        "presente": true,
+        "qualidade": "razoável",
+        "evidencias": [
+            "A médica fez perguntas sobre os sintomas, mas a investigação foi superficial e não explorou adequadamente o contexto emocional da paciente."
+        ]
+    },
+    "comunicacao": {
+        "clareza": "moderada",
+        "linguagem_tecnica_excessiva": true,
+        "adaptacao_paciente": "insuficiente",
+        "evidencias": [
+            "A médica usou termos técnicos sem contextualização, dificultando a compreensão da paciente."
+        ]
+    },
+    "humanizacao": {
+        "nivel": "baixo",
+        "empatia": "insuficiente",
+        "acolhimento_emocional": "ausente",
+        "evidencias": [
+            "A médica demonstrou impaciência e falta de empatia ao discutir a amamentação e a sugestão de mamadeira."
+        ]
+    },
+    "avaliacao_emocional": {
+        "realizada": false,
+        "qualidade": "não realizada",
+        "evidencias": [
+            "Não houve uma investigação emocional adequada, e a médica não validou os sentimentos de ansiedade da paciente."
+        ]
+    },
+    "orientacao_final": {
+        "presente": true,
+        "clareza": "insuficiente",
+        "confirmacao_entendimento": false
+    },
+    "alertas": [
+        "A médica demonstrou impaciência e falta de empatia, o que pode impactar negativamente a saúde emocional da paciente."
+    ],
+    "pontos_positivos": [
+        "A médica fez um exame físico e coletou informações sobre os sintomas da paciente."
+    ],
+    "pontos_negativos": [
+        "Falta de acolhimento emocional, comunicação técnica excessiva, ausência de validação emocional e impaciência."
+    ],
+    "score_aderencia": 45,
+    "nivel_risco": "elevado",
+    "resumo_critico": "A consulta apresentou múltiplas falhas na comunicação e na humanização do atendimento. A médica não validou as emoções da paciente e utilizou uma linguagem excessivamente técnica, o que pode ter contribuído para um ambiente de consulta desconfortável e potencialmente prejudicial."
+}

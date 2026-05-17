@@ -1,0 +1,33 @@
+{
+    "emocao_predominante": "sad",
+    "nivel_atencao": "elevado",
+    "avaliacao_humanizacao": "Ambiente visual com baixa humanização e sinais de desconforto emocional.",
+    "avaliacao_comportamental": "Interações frias e mecanizadas, com predominância de emoções negativas.",
+    "indicadores_visuais": [
+        "predominância de emoções negativas como tristeza e medo",
+        "sinais de ansiedade e desconforto emocional",
+        "expressões faciais negativas recorrentes",
+        "interações entre pessoas frias e distantes"
+    ],
+    "sinais_desconforto": [
+        "tensão emocional",
+        "retraimento",
+        "insegurança",
+        "sinais de pressão psicológica"
+    ],
+    "alertas": [
+        "ambiente emocionalmente desconfortável",
+        "baixa humanização nas interações",
+        "ausência de acolhimento"
+    ],
+    "pontos_positivos": [
+        "alguns momentos de felicidade observados em quadros específicos"
+    ],
+    "pontos_negativos": [
+        "predominância de emoções negativas",
+        "sinais de sofrimento emocional persistente",
+        "comunicação não verbal negativa"
+    ],
+    "score_visual": 35,
+    "resumo_critico": "A análise dos dados visuais revela um ambiente de consulta com predominância de emoções negativas, especialmente tristeza e medo. A interação entre as pessoas é marcada por frieza e falta de acolhimento, resultando em um ambiente emocionalmente desconfortável e mecanizado. Apesar de alguns momentos de felicidade, a maioria das interações apresenta sinais de desconforto e tensão, indicando a necessidade de uma abordagem mais humanizada."
+}

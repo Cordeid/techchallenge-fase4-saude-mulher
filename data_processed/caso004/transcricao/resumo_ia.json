@@ -1,0 +1,22 @@
+{
+    "contexto_geral": "A comunicação durante a consulta apresenta um tom técnico e distante, com falta de acolhimento e validação emocional. A explicação sobre o uso de antibióticos é confusa e não se adapta ao nível de compreensão da paciente.",
+    "empatia": "Baixa empatia, com um tom que pode ser percebido como frio e mecanizado.",
+    "linguagem_tecnica": "Excesso de termos técnicos, como 'resistência bacteriana', sem uma explicação acessível para a paciente.",
+    "humanizacao": "Falta de humanização, com uma abordagem que não considera as emoções ou preocupações da paciente.",
+    "escuta_ativa": "Não há evidências de escuta ativa, com a fala da paciente possivelmente interrompida ou não validada.",
+    "adaptacao_paciente": "Pouca adaptação ao perfil da paciente, com uma comunicação que não considera seu nível de entendimento.",
+    "pontos_positivos": [],
+    "pontos_negativos": [
+        "Consulta fria e mecanizada.",
+        "Excesso de tecnicismo.",
+        "Pouca adaptação ao nível da paciente.",
+        "Falta de acolhimento.",
+        "Ausência de validação emocional.",
+        "Comunicação confusa.",
+        "Tom distante.",
+        "Pouca empatia.",
+        "Postura excessivamente protocolar."
+    ],
+    "alertas": [],
+    "score_comunicacao": 45
+}

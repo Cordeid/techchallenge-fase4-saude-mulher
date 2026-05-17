@@ -1,0 +1,19 @@
+{
+    "qualidade_documental": "adequada",
+    "pontos_positivos": [
+        "Clareza do registro nas observações clínicas e orientações realizadas.",
+        "Completude documental com informações sobre o contexto familiar e desenvolvimento da criança.",
+        "Organização do prontuário, com seções bem definidas.",
+        "Humanização evidente na descrição do vínculo afetivo entre mãe e criança.",
+        "Empatia demonstrada pela médica ao relatar a participação da mãe e avó.",
+        "Escuta ativa refletida nas informações coletadas durante a anamnese.",
+        "Investigação emocional adequada ao considerar o contexto familiar.",
+        "Coerência clínica nas impressões e condutas descritas."
+    ],
+    "pontos_negativos": [
+        "Linguagem excessivamente técnica em algumas partes, que pode dificultar a compreensão por leigos.",
+        "Registro mecanizado em algumas seções, como na descrição do exame observacional."
+    ],
+    "score_prontuario": 75,
+    "analise_prontuario": "O prontuário apresenta uma qualidade documental adequada, com clareza e completude nas informações. A organização é boa, e a humanização é um ponto forte, evidenciado pela empatia e escuta ativa da médica. No entanto, a presença de linguagem técnica e um registro mecanizado em algumas partes podem ser melhorados para facilitar a compreensão e a conexão emocional com os pacientes e familiares."
+}

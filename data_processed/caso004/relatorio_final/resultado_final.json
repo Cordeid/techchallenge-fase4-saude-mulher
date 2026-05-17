@@ -1,0 +1,51 @@
+{
+    "caso_id": "caso004",
+    "risco_geral": "ELEVADO",
+    "classificacao": "CRÍTICA",
+    "score_final": 40,
+    "score_audio": 45,
+    "score_emocional": 45,
+    "score_video": 35,
+    "score_protocolar": 35,
+    "necessita_revisao_humana": true,
+    "avaliacao_comunicacao": "A comunicação é excessivamente técnica e confusa, com falta de clareza nas explicações. O uso de termos médicos sem contextualização pode gerar desconforto e insegurança na paciente.",
+    "avaliacao_empatia": "A empatia é baixa, com ausência de acolhimento emocional e validação das preocupações da paciente. A interação parece fria e mecanizada.",
+    "avaliacao_humanizacao": "A consulta carece de humanização, com um ambiente emocionalmente desconfortável e falta de conexão entre o profissional e a paciente.",
+    "linguagem_tecnica_excessiva": true,
+    "adaptacao_paciente": "A comunicação não se adapta ao perfil da paciente, resultando em confusão e falta de entendimento.",
+    "principais_alertas": [
+        "Paciente aparentando desconforto emocional.",
+        "Respostas monossilábicas frequentes.",
+        "Ambiente de consulta com predominância de emoções negativas."
+    ],
+    "evidencias_audio": [
+        "Comunicação fria e distante.",
+        "Falta de acolhimento e validação emocional."
+    ],
+    "evidencias_video": [
+        "Predominância de emoções negativas como medo e tristeza.",
+        "Interações frias e mecanizadas."
+    ],
+    "evidencias_protocolares": [
+        "Ausência de acolhimento inicial.",
+        "Escuta ativa deficiente.",
+        "Comunicação inadequada."
+    ],
+    "fatores_desconforto": [
+        "Excesso de tecnicismo.",
+        "Falta de clareza nas explicações.",
+        "Minimização das preocupações da paciente."
+    ],
+    "pontos_positivos": [
+        "Registro da médica responsável e identificação do tipo de atendimento.",
+        "Descrição do comportamento observado durante a consulta."
+    ],
+    "pontos_negativos": [
+        "Paciente não identificado corretamente.",
+        "Dificuldades de comunicação não abordadas.",
+        "Registro de sintomas e histórico clínico incompleto."
+    ],
+    "recomendacao": "Revisar a abordagem comunicacional, priorizando a humanização e a validação emocional. Implementar treinamento em escuta ativa e comunicação empática.",
+    "resumo_executivo": "A consulta apresenta múltiplas falhas em acolhimento, escuta ativa e comunicação, resultando em uma experiência fria e mecanizada para a paciente. A ausência de validação emocional e de investigação clínica adequada indica um risco elevado para a saúde emocional da paciente.",
+    "score_prontuario": 45
+}

@@ -1,0 +1,22 @@
+{
+    "contexto_geral": "A consulta apresenta uma comunicação que oscila entre momentos de empatia e outros de frieza. A médica tenta acolher a paciente, mas a conversa é marcada por interrupções e falta de clareza em algumas explicações.",
+    "empatia": "A médica demonstra empatia ao tentar confortar a paciente em um momento de vulnerabilidade emocional, mas a comunicação é interrompida e não flui de maneira natural.",
+    "linguagem_tecnica": "O uso de termos técnicos é moderado, mas a explicação sobre a condição do filho poderia ser mais acessível.",
+    "humanizacao": "A consulta carece de um acolhimento mais caloroso e de uma abordagem mais humanizada, especialmente em relação ao desconforto emocional da paciente.",
+    "escuta_ativa": "A escuta ativa é limitada, com a médica interrompendo a paciente em alguns momentos, o que pode fazer a paciente sentir que não está sendo ouvida.",
+    "adaptacao_paciente": "A adaptação ao perfil da paciente é insuficiente, pois a médica não ajusta sua comunicação ao nível de compreensão da paciente, especialmente em relação a termos médicos.",
+    "pontos_positivos": [
+        "A médica oferece orientações por escrito, o que é positivo para a compreensão da paciente.",
+        "A proposta de encaminhar a paciente para um grupo de terapia é uma boa iniciativa."
+    ],
+    "pontos_negativos": [
+        "Interrupções excessivas durante a fala da paciente.",
+        "Falta de acolhimento e validação emocional em momentos de vulnerabilidade.",
+        "Uso de termos técnicos sem explicação adequada."
+    ],
+    "alertas": [
+        "A comunicação pode ser percebida como fria e mecanizada em alguns momentos.",
+        "A falta de escuta ativa pode impactar negativamente a experiência da paciente."
+    ],
+    "score_comunicacao": 58
+}

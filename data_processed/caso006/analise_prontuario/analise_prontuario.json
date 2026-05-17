@@ -1,0 +1,18 @@
+{
+    "qualidade_documental": "adequada",
+    "pontos_positivos": [
+        "Clareza do registro nas anotações clínicas.",
+        "Completude documental com informações relevantes sobre a história clínica e aspectos comportamentais.",
+        "Organização do prontuário, com seções bem definidas.",
+        "Humanização na abordagem, com ambiente acolhedor e escuta ativa.",
+        "Empatia demonstrada pela médica ao considerar o impacto emocional dos sintomas.",
+        "Registro coerente e alinhado com a conduta clínica proposta."
+    ],
+    "pontos_negativos": [
+        "Linguagem técnica em algumas partes que pode dificultar a compreensão para leigos.",
+        "Registro mecanizado em algumas seções, como na impressão clínica, que poderia ser mais descritivo.",
+        "Falta de documentação mais detalhada sobre o sofrimento emocional da paciente."
+    ],
+    "score_prontuario": 75,
+    "analise_prontuario": "O prontuário apresenta uma qualidade documental adequada, com clareza e completude nas informações. A organização é boa, permitindo fácil navegação entre as seções. A humanização e empatia foram evidentes na condução da consulta, com uma abordagem que favoreceu a escuta ativa e a investigação emocional. No entanto, a linguagem excessivamente técnica e o registro mecanizado em algumas partes podem limitar a acessibilidade das informações. A documentação do sofrimento emocional poderia ser mais detalhada para melhor compreensão do quadro da paciente."
+}

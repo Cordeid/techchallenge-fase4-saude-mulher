@@ -1,0 +1,9 @@
+
+Caso: caso005
+
+Arquivos encontrados:
+- Vídeo: caso005.mp4
+- PDF: caso005.pdf
+
+Status:
+- Caso pronto para processamento

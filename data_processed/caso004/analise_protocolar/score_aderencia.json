@@ -1,0 +1,53 @@
+{
+    "acolhimento_inicial": {
+        "presente": false,
+        "qualidade": "ausente",
+        "evidencias": []
+    },
+    "escuta_ativa": {
+        "presente": false,
+        "qualidade": "deficiente",
+        "evidencias": []
+    },
+    "investigacao_clinica": {
+        "presente": false,
+        "qualidade": "inadequada",
+        "evidencias": []
+    },
+    "comunicacao": {
+        "clareza": "confusa",
+        "linguagem_tecnica_excessiva": true,
+        "adaptacao_paciente": "pouca",
+        "evidencias": []
+    },
+    "humanizacao": {
+        "nivel": "baixo",
+        "empatia": "ausente",
+        "acolhimento_emocional": "ausente",
+        "evidencias": []
+    },
+    "avaliacao_emocional": {
+        "realizada": false,
+        "qualidade": "não realizada",
+        "evidencias": []
+    },
+    "orientacao_final": {
+        "presente": false,
+        "clareza": "pouca",
+        "confirmacao_entendimento": false
+    },
+    "alertas": [
+        "atendimento mecanizado",
+        "frieza excessiva",
+        "ausência de acolhimento inicial"
+    ],
+    "pontos_positivos": [],
+    "pontos_negativos": [
+        "comunicação inadequada",
+        "baixa humanização",
+        "escuta deficiente"
+    ],
+    "score_aderencia": 35,
+    "nivel_risco": "elevado",
+    "resumo_critico": "A consulta apresenta múltiplas falhas em acolhimento, escuta ativa e comunicação, resultando em uma experiência fria e mecanizada para a paciente. A ausência de validação emocional e de investigação clínica adequada indica um risco elevado para a saúde emocional da paciente."
+}

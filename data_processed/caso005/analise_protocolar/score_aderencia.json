@@ -1,0 +1,63 @@
+{
+    "acolhimento_inicial": {
+        "presente": true,
+        "qualidade": "superficial",
+        "evidencias": [
+            "A consulta começou com um cumprimento, mas sem um aprofundamento no acolhimento da paciente."
+        ]
+    },
+    "escuta_ativa": {
+        "presente": true,
+        "qualidade": "deficiente",
+        "evidencias": [
+            "A paciente tentou expressar suas preocupações, mas a médica interrompeu com diagnósticos e recomendações antes de ouvir completamente."
+        ]
+    },
+    "investigacao_clinica": {
+        "presente": true,
+        "qualidade": "razoável",
+        "evidencias": [
+            "A médica fez algumas perguntas sobre os sintomas, mas não explorou adequadamente a duração e a intensidade da dor."
+        ]
+    },
+    "comunicacao": {
+        "clareza": "moderada",
+        "linguagem_tecnica_excessiva": true,
+        "adaptacao_paciente": "insuficiente",
+        "evidencias": [
+            "A médica usou termos técnicos que podem não ter sido compreendidos pela paciente, como 'dispepsia'."
+        ]
+    },
+    "humanizacao": {
+        "nivel": "baixo",
+        "empatia": "baixa",
+        "acolhimento_emocional": "ausente",
+        "evidencias": [
+            "A médica não validou as preocupações emocionais da paciente, focando apenas nos sintomas físicos."
+        ]
+    },
+    "avaliacao_emocional": {
+        "realizada": false,
+        "qualidade": "ausente",
+        "evidencias": [
+            "Não houve investigação sobre o impacto emocional dos conflitos familiares mencionados pela paciente."
+        ]
+    },
+    "orientacao_final": {
+        "presente": true,
+        "clareza": "moderada",
+        "confirmacao_entendimento": false
+    },
+    "alertas": [
+        "Comunicação inadequada e falta de acolhimento emocional."
+    ],
+    "pontos_positivos": [
+        "A médica forneceu orientações sobre medicamentos e dieta."
+    ],
+    "pontos_negativos": [
+        "Baixa empatia e acolhimento emocional; uso excessivo de linguagem técnica; escuta ativa deficiente."
+    ],
+    "score_aderencia": 45,
+    "nivel_risco": "elevado",
+    "resumo_critico": "A consulta apresentou múltiplas falhas na comunicação e na humanização do atendimento. A médica não validou as preocupações emocionais da paciente e utilizou linguagem técnica excessiva, dificultando a compreensão. A escuta ativa foi insuficiente, resultando em uma experiência de atendimento fria e mecanizada."
+}

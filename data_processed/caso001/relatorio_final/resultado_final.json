@@ -1,0 +1,52 @@
+{
+    "caso_id": "caso001",
+    "risco_geral": "ELEVADO",
+    "classificacao": "CRÍTICA",
+    "score_final": 48,
+    "score_audio": 45,
+    "score_emocional": 55,
+    "score_video": 25,
+    "score_protocolar": 45,
+    "necessita_revisao_humana": true,
+    "avaliacao_comunicacao": "A comunicação é predominantemente técnica e pode não ser adequada ao nível de compreensão da paciente, resultando em confusão.",
+    "avaliacao_empatia": "A empatia é baixa, com pouca validação das emoções da paciente e uma abordagem que pode ser percebida como intimidante.",
+    "avaliacao_humanizacao": "A humanização é insuficiente, com uma abordagem mais mecanizada e protocolar, sem um acolhimento adequado.",
+    "linguagem_tecnica_excessiva": true,
+    "adaptacao_paciente": "A adaptação ao perfil da paciente é inadequada, pois o médico não ajusta a comunicação ao nível de compreensão da paciente, que parece confusa com os resultados dos exames.",
+    "principais_alertas": [
+        "A paciente pode estar se sentindo desamparada e confusa em relação aos resultados dos exames.",
+        "A falta de validação emocional pode impactar negativamente a saúde mental da paciente."
+    ],
+    "evidencias_audio": [
+        "A comunicação do profissional é excessivamente técnica, o que pode aumentar a insegurança da paciente.",
+        "A paciente expressa estresse e resistência em relação à recomendação de parar de fumar, sugerindo desconforto emocional."
+    ],
+    "evidencias_video": [
+        "Ambiente visual crítico, desconfortável e potencialmente danoso.",
+        "Interações frias e ausência de acolhimento."
+    ],
+    "evidencias_protocolares": [
+        "O médico interrompeu a paciente ao falar sobre o fumo, demonstrando falta de escuta ativa.",
+        "O uso de termos técnicos como 'IgG' e 'IgM' sem explicação clara dificultou a compreensão da paciente."
+    ],
+    "fatores_desconforto": [
+        "Excesso de tecnicismo nas explicações sobre os exames.",
+        "Falta de acolhimento emocional em relação ao estresse da paciente.",
+        "Resistência da paciente em discutir a questão do fumo, indicando desconforto."
+    ],
+    "pontos_positivos": [
+        "Registro claro das queixas e comportamento da paciente.",
+        "Observações sobre o estado emocional da paciente foram bem documentadas.",
+        "Conduta médica inclui orientações para acompanhamento psicológico."
+    ],
+    "pontos_negativos": [
+        "Consulta fria e mecanizada.",
+        "Excesso de tecnicismo sem explicação.",
+        "Pouca adaptação ao nível de compreensão da paciente.",
+        "Interrupções excessivas.",
+        "Falta de acolhimento e validação emocional."
+    ],
+    "recomendacao": "Revisar a abordagem comunicacional, priorizando a humanização e a validação emocional da paciente. É essencial adaptar a linguagem ao nível de compreensão da paciente e garantir um espaço seguro para a expressão de suas preocupações.",
+    "resumo_executivo": "A consulta apresenta múltiplas falhas na comunicação e na humanização do atendimento. A falta de escuta ativa e a utilização de linguagem técnica sem explicação clara comprometeram a experiência da paciente, que não se sentiu acolhida emocionalmente. A ausência de validação e investigação emocional é preocupante, especialmente em um contexto de gravidez.",
+    "score_prontuario": 70
+}

@@ -1,0 +1,32 @@
+{
+    "emocoes_predominantes": [
+        "ansiedade",
+        "insegurança",
+        "desconforto psicológico"
+    ],
+    "sinais_emocionais": [
+        "medo",
+        "hesitação",
+        "silêncio excessivo",
+        "respostas curtas",
+        "tensão emocional"
+    ],
+    "evidencias": [
+        "A paciente expressa dor persistente e relaciona a situação a estresse familiar, indicando desconforto emocional.",
+        "A comunicação da doutora é direta, mas carece de acolhimento e validação das preocupações da paciente.",
+        "A paciente demonstra insegurança ao questionar se os problemas emocionais estão relacionados à dor física."
+    ],
+    "nivel_atencao": "elevado",
+    "avaliacao_comunicacao": "A comunicação é técnica e direta, mas falta acolhimento e empatia.",
+    "avaliacao_empatia": "A empatia é baixa, com pouca validação das emoções da paciente.",
+    "fatores_desconforto": [
+        "A paciente parece agoniada e nervosa, o que pode indicar desconforto psicológico.",
+        "A doutora não aborda as preocupações emocionais da paciente de forma adequada."
+    ],
+    "alertas": [
+        "A paciente apresenta sinais de sofrimento emocional e insegurança.",
+        "A abordagem da doutora pode ser percebida como fria e mecanizada."
+    ],
+    "score_emocional": 55,
+    "resumo_critico": "A consulta apresenta um ambiente emocional inadequado, com sinais de desconforto e falta de empatia. A comunicação é excessivamente técnica e não valida as emoções da paciente, resultando em uma experiência que pode ser considerada fria e pouco acolhedora."
+}

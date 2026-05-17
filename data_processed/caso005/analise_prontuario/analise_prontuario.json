@@ -1,0 +1,16 @@
+{
+    "qualidade_documental": "adequada",
+    "pontos_positivos": [
+        "Clareza no registro das informações clínicas.",
+        "Participação familiar bem documentada.",
+        "Discussão clínica detalhada e envolvente.",
+        "Orientações práticas e relevantes para o paciente."
+    ],
+    "pontos_negativos": [
+        "Falta de documentação sobre sofrimento emocional específico.",
+        "Uso de linguagem técnica em algumas partes que pode dificultar a compreensão do paciente.",
+        "Registro mecanizado em algumas seções, como na impressão clínica."
+    ],
+    "score_prontuario": 70,
+    "analise_prontuario": "O prontuário apresenta uma boa clareza e completude nas informações, com uma organização que facilita a leitura. A humanização é visível na participação da esposa e na discussão clínica, mas há espaço para melhorar a documentação do sofrimento emocional e evitar linguagem excessivamente técnica. A conduta descrita é coerente e adequada, mas a inclusão de mais detalhes sobre a experiência emocional do paciente poderia enriquecer a avaliação."
+}

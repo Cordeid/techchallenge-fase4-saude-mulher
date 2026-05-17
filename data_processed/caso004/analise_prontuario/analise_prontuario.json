@@ -1,0 +1,17 @@
+{
+    "qualidade_documental": "regular",
+    "pontos_positivos": [
+        "Registro da médica responsável e identificação do tipo de atendimento.",
+        "Descrição do comportamento observado durante a consulta.",
+        "Impressão clínica que menciona a alteração emocional do paciente."
+    ],
+    "pontos_negativos": [
+        "Paciente não identificado corretamente, o que compromete a rastreabilidade.",
+        "Dificuldades de comunicação não foram abordadas de forma a buscar soluções.",
+        "Registro de sintomas e histórico clínico incompleto e vago.",
+        "Conduta proposta é genérica e não aborda possíveis intervenções para a comunicação.",
+        "Falta de documentação sobre o sofrimento emocional do paciente."
+    ],
+    "score_prontuario": 45,
+    "analise_prontuario": "O prontuário apresenta uma qualidade regular, com algumas informações relevantes, mas carece de clareza e completude. A falta de identificação do paciente e a dificuldade de comunicação não foram adequadamente abordadas, o que limita a qualidade assistencial. A documentação do sofrimento emocional é insuficiente, e a conduta proposta não reflete uma abordagem mais humanizada e empática."
+}

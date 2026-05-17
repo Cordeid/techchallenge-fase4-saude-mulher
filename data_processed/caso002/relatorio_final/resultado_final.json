@@ -1,0 +1,50 @@
+{
+    "caso_id": "caso002",
+    "risco_geral": "MODERADO",
+    "classificacao": "CRÍTICA",
+    "score_final": 55,
+    "score_audio": 58,
+    "score_emocional": 55,
+    "score_video": 35,
+    "score_protocolar": 70,
+    "necessita_revisao_humana": true,
+    "avaliacao_comunicacao": "A comunicação foi marcada por interrupções e falta de fluidez, o que comprometeu a escuta ativa. Embora a médica tenha tentado explicar a condição do filho, a linguagem utilizada foi excessivamente técnica em alguns momentos, dificultando a compreensão da paciente.",
+    "avaliacao_empatia": "A empatia foi limitada. A médica fez tentativas de confortar a paciente, mas a falta de escuta ativa e a interrupção durante a fala da paciente indicam que a conexão emocional não foi plenamente estabelecida.",
+    "avaliacao_humanizacao": "A consulta careceu de um acolhimento mais caloroso e de uma abordagem mais humanizada, especialmente em relação ao desconforto emocional da paciente. A interação foi percebida como fria em diversos momentos.",
+    "linguagem_tecnica_excessiva": true,
+    "adaptacao_paciente": "A adaptação ao perfil da paciente foi insuficiente, pois a médica não ajustou sua comunicação ao nível de compreensão da paciente, especialmente em relação a termos médicos.",
+    "principais_alertas": [
+        "Interrupções excessivas durante a fala da paciente.",
+        "Falta de acolhimento e validação emocional em momentos de vulnerabilidade.",
+        "Uso de termos técnicos sem explicação adequada."
+    ],
+    "evidencias_audio": [
+        "A comunicação foi excessivamente técnica em alguns momentos, com falta de acolhimento emocional.",
+        "A médica interrompeu a paciente em diversos momentos, o que pode ter impactado a experiência da consulta."
+    ],
+    "evidencias_video": [
+        "Ambiente visual com baixa humanização e sinais de desconforto emocional.",
+        "Interações frias e mecanizadas, com predominância de emoções negativas."
+    ],
+    "evidencias_protocolares": [
+        "Acolhimento inicial foi adequado.",
+        "Investigação clínica foi realizada de forma organizada."
+    ],
+    "fatores_desconforto": [
+        "Desemprego da paciente e do marido, gerando estresse financeiro.",
+        "Preocupação com a saúde do filho, que pode estar contribuindo para a ansiedade.",
+        "A paciente se sente insegura em relação ao tratamento e à saúde do filho."
+    ],
+    "pontos_positivos": [
+        "A médica ofereceu orientações por escrito, o que é positivo para a compreensão da paciente.",
+        "A proposta de encaminhar a paciente para um grupo de terapia é uma boa iniciativa."
+    ],
+    "pontos_negativos": [
+        "Interrupções durante a fala da paciente.",
+        "Falta de acolhimento e validação emocional em momentos de vulnerabilidade.",
+        "Uso de termos técnicos sem explicação adequada."
+    ],
+    "recomendacao": "Recomenda-se uma revisão da abordagem comunicacional da médica, com foco em melhorar a escuta ativa e a validação emocional da paciente. A utilização de uma linguagem mais acessível e a confirmação do entendimento das orientações finais são essenciais para uma melhor experiência da paciente.",
+    "resumo_executivo": "A consulta apresentou uma comunicação que oscilou entre momentos de empatia e outros de frieza. A médica tentou acolher a paciente, mas a conversa foi marcada por interrupções e falta de clareza em algumas explicações. A falta de uma abordagem mais humanizada e a utilização de linguagem técnica dificultaram a empatia e a escuta ativa, essenciais em atendimentos na saúde da mulher.",
+    "score_prontuario": 45
+}

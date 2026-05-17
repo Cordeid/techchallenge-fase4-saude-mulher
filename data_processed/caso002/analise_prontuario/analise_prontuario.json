@@ -1,0 +1,20 @@
+{
+    "qualidade_documental": "regular",
+    "pontos_positivos": [
+        "Registro da médica responsável e identificação do paciente.",
+        "Resumo da consulta apresenta informações sobre os sintomas relatados.",
+        "Impressão da médica reflete uma análise da situação da paciente."
+    ],
+    "pontos_negativos": [
+        "Clareza do registro: algumas informações são vagas e não detalham adequadamente o estado emocional da paciente.",
+        "Completude documental: falta de informações sobre a história clínica anterior e contexto social da paciente.",
+        "Organização: a estrutura do prontuário poderia ser mais clara, com seções bem definidas.",
+        "Humanização: a linguagem utilizada é um tanto técnica e pode não transmitir empatia.",
+        "Escuta ativa: a descrição do comportamento da paciente sugere que a médica não conseguiu estabelecer uma comunicação efetiva.",
+        "Investigação emocional: não há um aprofundamento nas questões emocionais que a paciente enfrenta.",
+        "Registro mecanizado: a impressão da médica parece ser uma generalização sem uma análise mais profunda.",
+        "Qualidade assistencial: a conduta proposta é básica e não considera um plano de acompanhamento mais detalhado."
+    ],
+    "score_prontuario": 45,
+    "analise_prontuario": "O prontuário apresenta uma qualidade regular, com alguns pontos positivos, como a identificação do médico e do paciente, mas carece de detalhes importantes que poderiam melhorar a compreensão do estado emocional da paciente. A falta de uma abordagem mais humanizada e a utilização de linguagem técnica dificultam a empatia e a escuta ativa, essenciais em atendimentos na saúde da mulher. A conduta proposta é insuficiente para abordar as queixas emocionais apresentadas."
+}

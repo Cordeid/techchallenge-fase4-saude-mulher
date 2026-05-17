@@ -1,0 +1,32 @@
+{
+    "emocao_predominante": "angry",
+    "nivel_atencao": "elevado",
+    "avaliacao_humanizacao": "Ambiente visual crítico, com sinais de desconforto emocional e falta de acolhimento.",
+    "avaliacao_comportamental": "Interações frias e mecanizadas, com predominância de emoções negativas.",
+    "indicadores_visuais": [
+        "predominância de emoções negativas como tristeza e raiva",
+        "sinais de desconforto emocional persistente",
+        "interações frias entre as pessoas",
+        "ausência de acolhimento",
+        "comportamento mecanizado"
+    ],
+    "sinais_desconforto": [
+        "expressões faciais de raiva",
+        "sinais de tensão",
+        "atmosfera emocionalmente distante"
+    ],
+    "alertas": [
+        "sinais de pressão psicológica",
+        "falta de conexão humana"
+    ],
+    "pontos_positivos": [
+        "alguns momentos de felicidade em quadros isolados"
+    ],
+    "pontos_negativos": [
+        "predominância de emoções negativas em 80% dos quadros",
+        "sinais de medo e tristeza em várias interações",
+        "ambiente visual crítico e desconfortável"
+    ],
+    "score_visual": 35,
+    "resumo_critico": "A análise dos dados visuais revela um ambiente de consulta médica marcado por emoções negativas predominantes, como raiva e tristeza, com interações frias e mecanizadas. A falta de acolhimento e sinais de desconforto emocional persistente indicam uma experiência crítica e potencialmente danosa para os envolvidos."
+}

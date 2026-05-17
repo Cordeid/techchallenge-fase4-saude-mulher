@@ -1,0 +1,30 @@
+{
+    "emocoes_predominantes": [
+        "ansiedade",
+        "insegurança",
+        "desconforto psicológico"
+    ],
+    "sinais_emocionais": [
+        "silêncio excessivo",
+        "respostas curtas",
+        "tensão emocional"
+    ],
+    "evidencias": [
+        "A paciente parece confusa em relação aos resultados dos exames, indicando dificuldade de compreensão.",
+        "A comunicação do profissional é excessivamente técnica, o que pode aumentar a insegurança da paciente.",
+        "A paciente expressa estresse e resistência em relação à recomendação de parar de fumar, sugerindo desconforto emocional."
+    ],
+    "nivel_atencao": "elevado",
+    "avaliacao_comunicacao": "A comunicação é predominantemente técnica e pode não ser adequada ao nível de compreensão da paciente, resultando em confusão.",
+    "avaliacao_empatia": "A empatia é baixa, com pouca validação das emoções da paciente e uma abordagem que pode ser percebida como intimidante.",
+    "fatores_desconforto": [
+        "Excesso de tecnicismo nas explicações sobre os exames.",
+        "Falta de acolhimento emocional em relação ao estresse da paciente.",
+        "Resistência da paciente em discutir a questão do fumo, indicando desconforto."
+    ],
+    "alertas": [
+        "A paciente demonstra sinais de ansiedade e insegurança, o que pode impactar negativamente sua experiência de atendimento."
+    ],
+    "score_emocional": 55,
+    "resumo_critico": "A consulta apresenta uma condução emocional inadequada, com comunicação excessivamente técnica e baixa empatia, resultando em desconforto perceptível para a paciente. É necessário um maior acolhimento emocional e adaptação da comunicação ao perfil da paciente para melhorar a experiência do atendimento."
+}
