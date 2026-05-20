@@ -67,23 +67,17 @@ def salvar_json(dados: dict, caminho: Path):
 # =========================
 
 def carregar_resultados_caso(caso_path: Path) -> dict:
-    transcricao = ler_texto(caso_path / "transcricao" / "transcription.txt")
     analise_prontuario = ler_json(caso_path / "analise_prontuario" / "analise_prontuario.json")
-    resumo_audio = ler_json(caso_path / "transcricao" / "resumo_ia.json")
-    analise_emocional = ler_json(caso_path / "transcricao" / "analise_emocional.json")
+    analise_comunicacao = ler_json(caso_path / "analise_comunicacao" / "resumo_comunicacao_ia.json")
+    analise_vocal = ler_json(caso_path / "analise_vocal" / "analise_vocal.json")
     analise_video = ler_json(caso_path / "analise_video" / "resumo_video_ia.json")
-    deteccoes_video = ler_json(caso_path / "analise_video" / "deteccoes.json")
-    analise_protocolar = ler_json(caso_path / "analise_protocolar" / "score_aderencia.json")
 
     return {
         "caso_id": caso_path.name,
         "analise_prontuario": analise_prontuario,
-        "transcricao": transcricao,
-        "resumo_audio": resumo_audio,
-        "analise_emocional": analise_emocional,
+        "analise_comunicacao": analise_comunicacao,
+        "analise_vocal": analise_vocal,
         "analise_video": analise_video,
-        "deteccoes_video": deteccoes_video,
-        "analise_protocolar": analise_protocolar,
     }
 
 
@@ -91,7 +85,7 @@ def carregar_resultados_caso(caso_path: Path) -> dict:
 # FUSÃO MULTIMODAL
 # =========================
 
-def gerar_fusao_multimodal(dados: dict) -> dict:
+def gerar_fusao_multimodal(dados: dict, resumo_caso: str) -> dict:
 
     score_data = calcular_score_final(dados)
 
@@ -107,10 +101,10 @@ Você é um auditor clínico multimodal especializado em:
 Sua tarefa é produzir uma análise crítica integrada da consulta médica.
 
 Você receberá:
-1. análises de áudio;
-2. análises emocionais;
-3. análises visuais;
-4. auditoria protocolar;
+1. análise de prontuário;
+2. análise de comunicação;
+3. análise vocal;
+4. análise visual;
 5. scores determinísticos calculados pelo sistema.
 
 IMPORTANTE:
@@ -146,27 +140,13 @@ Formato esperado:
 
 {{
     "caso_id": "{dados['caso_id']}",
-    "risco_geral": "{score_data['risco_geral']}",
     "classificacao": "{score_data['classificacao']}",
     "score_final": {score_data['score_final']},
-    "score_audio": {score_data['score_audio']},
-    "score_emocional": {score_data['score_emocional']},
+    "score_prontuario": {score_data['score_prontuario']},
+    "score_comunicacao": {score_data['score_comunicacao']},
+    "score_vocal": {score_data['score_vocal']},
     "score_video": {score_data['score_video']},
-    "score_protocolar": {score_data['score_protocolar']},
     "necessita_revisao_humana": {str(score_data['necessita_revisao_humana']).lower()},
-    "avaliacao_comunicacao": "",
-    "avaliacao_empatia": "",
-    "avaliacao_humanizacao": "",
-    "linguagem_tecnica_excessiva": false,
-    "adaptacao_paciente": "",
-    "principais_alertas": [],
-    "evidencias_audio": [],
-    "evidencias_video": [],
-    "evidencias_protocolares": [],
-    "fatores_desconforto": [],
-    "pontos_positivos": [],
-    "pontos_negativos": [],
-    "recomendacao": "",
     "resumo_executivo": ""
 }}
 
@@ -177,10 +157,10 @@ SCORES CALCULADOS
 {json.dumps(score_data, ensure_ascii=False, indent=2)}
 
 ========================
-DADOS DO CASO
+SOBRE O CASO
 ========================
 
-{json.dumps(dados, ensure_ascii=False, indent=2)}
+{resumo_caso}
 """
 
     response = client.chat.completions.create(
@@ -224,17 +204,13 @@ DADOS DO CASO
             "score_final": score_data["score_final"],
 
             "score_prontuario": score_data["score_prontuario"],
-            "score_audio": score_data["score_audio"],
-            "score_emocional": score_data["score_emocional"],
+            "score_comunicacao": score_data["score_comunicacao"],
+            "score_vocal": score_data["score_vocal"],
             "score_video": score_data["score_video"],
-            "score_protocolar": score_data["score_protocolar"],
 
             "classificacao": score_data["classificacao"],
-            "risco_geral": score_data["risco_geral"],
 
-            "necessita_revisao_humana": (
-                score_data["necessita_revisao_humana"]
-            )
+            "necessita_revisao_humana": (score_data["necessita_revisao_humana"])
         })
 
         return resultado
@@ -256,7 +232,7 @@ DADOS DO CASO
 # =========================
 
 
-def gerar_relatorio_markdown(resultado: dict) -> str:
+def gerar_relatorio_markdown(resumo_caso: str, dados: dict, resultado: dict) -> str:
 
     caso_id = resultado.get("caso_id", "N/A")
 
@@ -275,39 +251,19 @@ def gerar_relatorio_markdown(resultado: dict) -> str:
 
     """
 
-    alertas = resultado.get("principais_alertas", [])
-    evidencias_audio = resultado.get("evidencias_audio", [])
-    evidencias_video = resultado.get("evidencias_video", [])
-    evidencias_protocolares = resultado.get("evidencias_protocolares", [])
-    pontos_positivos = resultado.get("pontos_positivos", [])
-    pontos_negativos = resultado.get("pontos_negativos", [])
-    fatores_desconforto = resultado.get("fatores_desconforto", [])
-
-    def lista_md(itens):
-        if not itens:
-            return "- Nenhum item identificado."
-
-        return "\n".join([
-            f"- {item}"
-            for item in itens
-        ])
 
     return f"""# Relatório Final de Auditoria Multimodal - Sistema Hórus
     
     ## Caso
-
     **{caso_id}**
+    {resumo_caso}
 
     ---
 
     ## Resultado Geral
 
-    **Risco geral:** {resultado.get("risco_geral")}
-
-    **Classificação:** {resultado.get("classificacao")}
-
     **Score final:** {resultado.get("score_final")} de 100
-
+    **Classificação:** {resultado.get("classificacao")}
     **Necessita revisão humana:** {"SIM" if resultado.get("necessita_revisao_humana") else "NÃO"}
 
     ---
@@ -317,78 +273,30 @@ def gerar_relatorio_markdown(resultado: dict) -> str:
     | Dimensão            |                               Score |
     | ------------------- | ----------------------------------: |
     | Prontuário          |      {resultado.get("score_prontuario")} |
-    | Comunicação/Áudio   |      {resultado.get("score_audio")} |
-    | Emoções             |  {resultado.get("score_emocional")} |
-    | Vídeo/Comportamento |      {resultado.get("score_video")} |
-    | Protocolo           | {resultado.get("score_protocolar")} |
+    | Comunicação         |     {resultado.get("score_comunicacao")} |
+    | Emoções (vocal)     |  {resultado.get("score_vocal")} |
+    | Vídeo (comportamento/postura) |      {resultado.get("score_video")} |
 
     ---
 
     ## Resumo Executivo
-
     {resultado.get("resumo_executivo")}
 
     ---
 
-    ## Avaliação de Comunicação
+    ## Análise Detalhada
 
-    {resultado.get("avaliacao_comunicacao", "Não informado.")}
+    ### Análise de Prontuário
+    {dados["analise_prontuario"].get("analise_prontuario", "Não informado.")}
 
-    ---
+    ### Análise de Comunicação/Áudio
+    {dados["analise_comunicacao"].get("analise_comunicacao", "Não informado.")}
 
-    ## Avaliação de Humanização
+    ### Análise Emocional (vocal)
+    {dados["analise_vocal"].get("analise_vocal", "Não informado.")}
 
-    {resultado.get("avaliacao_humanizacao", "Não informado.")}
-
-    ---
-
-    ## Principais Alertas
-
-    {lista_md(alertas)}
-
-    ---
-
-    ## Fatores de Desconforto
-
-    {lista_md(fatores_desconforto)}
-
-    ---
-
-    ## Evidências de Áudio
-
-    {lista_md(evidencias_audio)}
-
-    ---
-
-    ## Evidências de Vídeo
-
-    {lista_md(evidencias_video)}
-
-    ---
-
-    ## Evidências Protocolares
-
-    {lista_md(evidencias_protocolares)}
-
-    ---
-
-    ## Pontos Positivos
-
-    {lista_md(pontos_positivos)}
-
-    ---
-
-    ## Pontos Negativos
-
-    {lista_md(pontos_negativos)}
-
-    ---
-
-    ## Recomendação
-
-    {resultado.get("recomendacao")}
-
-    ---
+    ### Análise de Vídeo (comportamento/postura)
+    {dados["analise_video"].get("analise_video", "Não informado.")}
 
     ## Observação
     Este relatório possui caráter assistivo e preventivo.
@@ -407,26 +315,23 @@ def calcular_score_final(dados: dict):
     # SCORES BASE
     # =========================
     analise_prontuario = (dados.get("analise_prontuario", {}) or {})
-    resumo_audio = (dados.get("resumo_audio", {}) or {})
-    analise_emocional = (dados.get("analise_emocional", {}) or {})
+    analise_comunicacao = (dados.get("analise_comunicacao", {}) or {})
+    analise_vocal = (dados.get("analise_vocal", {}) or {})
     analise_video = (dados.get("analise_video", {}) or {})
-    analise_protocolar = (dados.get("analise_protocolar", {}) or {})
 
     score_prontuario = analise_prontuario.get("score_prontuario", 70)
-    score_audio = resumo_audio.get("score_comunicacao", 70)
-    score_emocional = analise_emocional.get("score_emocional", 70)
-    score_video = analise_video.get("score_visual", 70)
-    score_protocolar = analise_protocolar.get("score_aderencia", 70)    
+    score_comunicacao = analise_comunicacao.get("score_comunicacao", 70)
+    score_vocal = analise_vocal.get("score_vocal", 70)
+    score_video = analise_video.get("score_video", 70)
 
     # =========================
     # SCORE BASE PONDERADO
     # =========================
     score_base = (
         (score_prontuario * 0.20) +
-        (score_audio * 0.25) +
-        (score_emocional * 0.10) +
-        (score_video * 0.15) +
-        (score_protocolar * 0.30)
+        (score_comunicacao * 0.25) +
+        (score_vocal * 0.30) +
+        (score_video * 0.25)
     )
 
     score_final = max(0, min(100, round(score_base)))
@@ -446,35 +351,23 @@ def calcular_score_final(dados: dict):
     else:
         classificacao = "GRAVE"
 
-    # =========================
-    # RISCO GERAL
-    # =========================
-    if score_final >= 75:
-        risco = "BAIXO"
-    elif score_final >= 50:
-        risco = "MODERADO"
-    else:
-        risco = "ELEVADO"
 
     # =========================
     # REVISÃO HUMANA
     # =========================
-    necessita_revisao_humana = (risco != "BAIXO")
+    necessita_revisao_humana = (score_final < 70) or (score_vocal < 60) or (score_video < 60)
 
     return {
         "score_base": round(score_base, 2),
         "score_final": score_final,
         "score_prontuario": score_prontuario,
-        "score_audio": score_audio,
-        "score_emocional": score_emocional,
+        "score_comunicacao": score_comunicacao,
+        "score_vocal": score_vocal,
         "score_video": score_video,
-        "score_protocolar": score_protocolar,
         "classificacao": classificacao,
-        "risco_geral": risco,
-        "necessita_revisao_humana": (
-            necessita_revisao_humana
-        ),
+        "necessita_revisao_humana": (necessita_revisao_humana),
     }
+
 
 # =========================
 # PROCESSAMENTO
@@ -488,15 +381,18 @@ def processar_caso(caso_info):
     print("\n======================")
     print(f"Fusionando caso: {caso_id}")
 
+
+
+    resumo_caso = pasta_processada / "analise_comunicacao" / "resumo_caso.txt"
     dados = carregar_resultados_caso(pasta_processada)
-    resultado = gerar_fusao_multimodal(dados)
+
+    avaliacao_final = gerar_fusao_multimodal(dados, resumo_caso)
     pasta_saida = (pasta_processada /"relatorio_final")
 
-    salvar_json(resultado,pasta_saida /"resultado_final.json")
+    salvar_json(avaliacao_final, pasta_saida /"resultado_final.json")
 
-    relatorio_md = gerar_relatorio_markdown(resultado)
+    relatorio_md = gerar_relatorio_markdown(resumo_caso, dados, avaliacao_final)
 
-    salvar_texto(relatorio_md,pasta_saida /"relatorio_final.md")
+    salvar_texto(relatorio_md, pasta_saida /"relatorio_final.md")
 
     print("✔ Resultado final salvo")
-    print("✔ Relatório final salvo")

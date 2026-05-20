@@ -32,9 +32,11 @@ def criar_estrutura_processada(caso_id: str):
 
     subpastas = [
         "analise_prontuario",
-        "audio",
-        "transcricao",
-        "frames",
+        "analise_comunicacao",
+        "analise_emocional_audio",
+        "analise_video",
+        "data_audio",
+        "data_frames",
         "relatorio_final"
     ]
 

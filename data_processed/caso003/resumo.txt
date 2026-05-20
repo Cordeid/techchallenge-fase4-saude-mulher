@@ -1,9 +1,0 @@
-
-Caso: caso003
-
-Arquivos encontrados:
-- Vídeo: caso003.mp4
-- PDF: caso003.pdf
-
-Status:
-- Caso pronto para processamento

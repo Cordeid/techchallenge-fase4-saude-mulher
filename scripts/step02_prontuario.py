@@ -13,8 +13,19 @@ from openai import OpenAI
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
 client = OpenAI(api_key=OPENAI_API_KEY)
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+PROTOCOLO_PATH = BASE_DIR / "protocolos" / "protocolo_prontuario.md"
+
+# =========================
+# CARREGAR PROTOCOLO
+# =========================
+
+def carregar_protocolo():
+
+    with open(PROTOCOLO_PATH, "r", encoding="utf-8") as f:
+        return f.read()
 
 # =========================
 # EXTRAÇÃO PDF
@@ -63,7 +74,7 @@ def salvar_texto(texto, caminho):
 # LLM
 # =========================
 
-def analisar_prontuario(texto):
+def analisar_prontuario(texto, protocolo):
 
     prompt = f"""
 Você é um auditor clínico especializado em:
@@ -74,53 +85,87 @@ Você é um auditor clínico especializado em:
 - segurança assistencial;
 - saúde da mulher.
 
-Sua tarefa é avaliar criticamente a qualidade do prontuário médico.
+Sua tarefa é realizar uma auditoria crítica de prontuário médico.
 
-Avalie:
+Você DEVE utilizar o protocolo abaixo como referência oficial
+de avaliação.
 
-- clareza do registro;
+==================================================
+PROTOCOLO OFICIAL DE AVALIAÇÃO
+==================================================
+
+{protocolo}
+
+==================================================
+INSTRUÇÕES DE AUDITORIA
+==================================================
+
+Avalie criticamente:
+
+- aderência ao protocolo;
 - completude documental;
+- clareza do registro;
 - organização;
+- coerência clínica;
 - humanização;
 - empatia;
 - escuta ativa;
 - investigação emocional;
 - linguagem excessivamente técnica;
 - registro mecanizado;
-- coerência clínica;
 - qualidade assistencial;
 - documentação de sofrimento emocional;
-- qualidade da conduta descrita.
+- qualidade da conduta descrita;
+- segurança documental.
 
 IMPORTANTE:
+
 - Não faça diagnóstico clínico.
 - Não confirme violência.
-- Seja técnico e crítico.
+- Não invente informações.
+- Baseie-se SOMENTE no conteúdo presente no prontuário.
+- Seja técnico, crítico e objetivo.
 
-Escala de score:
+Você deve identificar:
+
+- critérios adequadamente atendidos;
+- critérios parcialmente atendidos;
+- critérios ausentes;
+- possíveis riscos documentais;
+- sinais de desumanização;
+- falhas de comunicação clínica.
+
+==================================================
+ESCALA
+==================================================
+
 0-20 → muito ruim
 21-40 → ruim
 41-60 → regular
 61-80 → adequado
 81-100 → excelente
 
+==================================================
+FORMATO OBRIGATÓRIO
+==================================================
+
 Retorne APENAS JSON válido.
 
-Formato:
-
 {{
-    "qualidade_documental": "",
+    "score_prontuario": 0,
+
     "pontos_positivos": [],
     "pontos_negativos": [],
-    "score_prontuario": 0,
+
     "analise_prontuario": ""
 }}
 
-PRONTUÁRIO:
+==================================================
+PRONTUÁRIO
+==================================================
 
 {texto}
 """
-
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         temperature=0,
@@ -163,20 +208,21 @@ def processar_caso(caso_info):
     print("\n======================")
     print(f"Analisando prontuário: {caso_id}")
 
-    pdfs = list(
-        pasta_raw.glob("*.pdf")
-    )
+    pdfs = list(pasta_raw.glob("*.pdf"))
 
     if not pdfs:
         print("❌ PDF não encontrado")
         return
 
     pdf_path = pdfs[0]
-
     texto = extrair_texto_pdf(pdf_path)
+    protocolo = carregar_protocolo()
+
     pasta_saida = (pasta_processada / "analise_prontuario")
+
     salvar_texto(texto, pasta_saida / "prontuario_extraido.txt")
-    resultado = analisar_prontuario(texto)
+
+    resultado = analisar_prontuario(texto=texto, protocolo=protocolo)
 
     salvar_json(resultado, pasta_saida / "analise_prontuario.json")
 

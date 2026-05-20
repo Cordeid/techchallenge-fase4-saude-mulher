@@ -1,9 +1,0 @@
-
-Caso: caso006
-
-Arquivos encontrados:
-- Vídeo: caso006.mp4
-- PDF: caso006.pdf
-
-Status:
-- Caso pronto para processamento
