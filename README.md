@@ -6,6 +6,12 @@
 
 ### Tech Challenge — Fase 4
 
+Grupo:
+
+- Allan Ribeiro – RM367988
+- Anderson Danilo G Costa – RM368340
+- Diego Cordeiro – RM 369026
+
 ---
 
 # 1. Visão Geral do Projeto
