@@ -256,7 +256,6 @@ def gerar_relatorio_markdown(resumo_caso: str, dados: dict, resultado: dict) -> 
     
     ## Caso
     **{caso_id}**
-    {resumo_caso}
 
     ---
 
