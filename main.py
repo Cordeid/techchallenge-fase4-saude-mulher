@@ -34,8 +34,8 @@ def main():
         print("\n=== Fusão Multimodal ===")
         step06_fusao(caso_info)
 
-        # print("\n=== Gerando PDF ===")
-        # step07_pdf(caso_info)
+        print("\n=== Gerando PDF ===")
+        step07_pdf(caso_info)
 
     print("\n=== Pipeline Concluído ===")
  

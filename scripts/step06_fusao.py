@@ -68,9 +68,9 @@ def salvar_json(dados: dict, caminho: Path):
 
 def carregar_resultados_caso(caso_path: Path) -> dict:
     analise_prontuario = ler_json(caso_path / "analise_prontuario" / "analise_prontuario.json")
-    analise_comunicacao = ler_json(caso_path / "analise_comunicacao" / "resumo_comunicacao_ia.json")
+    analise_comunicacao = ler_json(caso_path / "analise_comunicacao" / "analise_comunicacao.json")
     analise_vocal = ler_json(caso_path / "analise_vocal" / "analise_vocal.json")
-    analise_video = ler_json(caso_path / "analise_video" / "resumo_video_ia.json")
+    analise_video = ler_json(caso_path / "analise_video" / "analise_video.json")
 
     return {
         "caso_id": caso_path.name,
@@ -381,9 +381,8 @@ def processar_caso(caso_info):
     print("\n======================")
     print(f"Fusionando caso: {caso_id}")
 
-
-
-    resumo_caso = pasta_processada / "analise_comunicacao" / "resumo_caso.txt"
+    resumo_caso_path = pasta_processada / "analise_comunicacao" / "resumo_caso.txt"
+    resumo_caso = ler_texto(resumo_caso_path)
     dados = carregar_resultados_caso(pasta_processada)
 
     avaliacao_final = gerar_fusao_multimodal(dados, resumo_caso)

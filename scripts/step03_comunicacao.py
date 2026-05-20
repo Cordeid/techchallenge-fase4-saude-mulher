@@ -129,8 +129,6 @@ def gerar_resumo_caso(caso_info):
     
     pasta_processada = caso_info["processed_path"]
 
-    print("Gerando resumo IA...")
-
     transcricao_path = pasta_processada / "analise_comunicacao" / "transcription.txt"
 
     if not transcricao_path.exists():
@@ -142,7 +140,7 @@ def gerar_resumo_caso(caso_info):
 
     prompt = f"""
     Você é um auditor clínico especializado em comunicação médica.
-    Sua tarefa é gerar um resumo crítico da consulta com base na transcrição.
+    Sua tarefa é gerar um resumo técnico da consulta com base na transcrição com, no máximo, 300 palavras.
     Transcrição:
     {transcricao}
     Resumo técnico:
@@ -170,8 +168,6 @@ def gerar_resumo_caso(caso_info):
 # =========================
 
 def analisar_comunicacao(texto, protocolo):
-
-    print("Gerando resumo IA...")
 
     prompt = f"""
 Você é um auditor clínico especializado em:

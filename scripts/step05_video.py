@@ -199,7 +199,7 @@ Retorne APENAS JSON válido.
     "score_video": 0,
     "indicadores_positivos": [],
     "indicadores_negativos": [],
-    "resumo_critico": ""
+    "analise_video": ""
 }}
 
 ==================================

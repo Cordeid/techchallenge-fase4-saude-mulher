@@ -8,7 +8,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 from reportlab.platypus.flowables import HRFlowable
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.lib.enums import TA_CENTER, TA_LEFT
+from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
 from reportlab.lib.pagesizes import A4
 
 load_dotenv()
@@ -46,11 +46,13 @@ body_style = ParagraphStyle(
     parent=styles["BodyText"],
     fontSize=11,
     leading=18,
+    alignment=TA_JUSTIFY,
 )
 
 bullet_style = ParagraphStyle(
     "Bullet",
     parent=body_style,
+    alignment=TA_JUSTIFY,
     leftIndent=15,
     bulletIndent=5,
 )
