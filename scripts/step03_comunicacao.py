@@ -300,6 +300,12 @@ def salvar_json(dados, caminho):
 # =========================
 
 def processar_caso(caso_info):
+    """
+    Responsável pela análise comunicacional da consulta médica.
+    O script extrai o áudio do vídeo, realiza transcrição automática da conversa e utiliza um protocolo de comunicação clínica humanizada para avaliar acolhimento, empatia, clareza, escuta ativa e sinais de desumanização.
+    A análise é realizada por LLM, gerando score comunicacional, resumo técnico da consulta e auditoria crítica baseada exclusivamente na transcrição da interação médico-paciente.
+    """
+
     caso_id = caso_info["caso_id"]
     video = caso_info["video"]
     pasta_processada = caso_info["processed_path"]

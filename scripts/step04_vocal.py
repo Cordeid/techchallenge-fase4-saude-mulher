@@ -155,6 +155,11 @@ def salvar_json(dados, caminho):
 
 
 def processar_caso(caso_info):
+    """
+    Responsável pela análise emocional e comportamental da voz.
+    O script utiliza processamento acústico para extrair features como pitch, energia, ritmo de fala e pausas, permitindo inferir possíveis sinais de tensão, agressividade, frieza emocional ou acolhimento vocal.
+    As métricas acústicas são interpretadas por LLM com base em um protocolo especializado de comunicação vocal humanizada, gerando score emocional, análise crítica e indicadores positivos e negativos da comunicação não verbal sonora.
+    """
 
     caso_id = caso_info["caso_id"]
     pasta_processada = (caso_info["processed_path"])

@@ -169,6 +169,13 @@ def preparar_caso(caso: Path):
 # =========================
 
 def processar_casos():
+    """
+    Responsável pela etapa de ingestão e preparação dos casos clínicos. 
+    O script identifica automaticamente os arquivos disponíveis (vídeo e prontuário PDF), valida a estrutura mínima necessária para processamento e cria a organização padronizada de diretórios do caso no ambiente processado. 
+    Também gera arquivos de metadata e um resumo inicial do caso, permitindo rastreabilidade e padronização do pipeline multimodal. 
+    Atua como ponto de entrada do Sistema Hórus, estruturando os dados que serão utilizados pelos agentes especializados de prontuário, comunicação, análise vocal, vídeo e fusão multimodal.
+
+    """
     casos = listar_casos()
     casos_processados = []
 

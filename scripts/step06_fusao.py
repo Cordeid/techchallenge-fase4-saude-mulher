@@ -373,6 +373,11 @@ def calcular_score_final(dados: dict):
 # =========================
 
 def processar_caso(caso_info):
+    """
+    Responsável pela fusão multimodal das análises do Sistema Hórus.
+    O script consolida os resultados gerados pelos agentes de prontuário, comunicação, análise vocal e vídeo, aplicando cálculo determinístico de scores e classificação geral da consulta.
+    Utiliza LLM para interpretar criticamente a coerência entre os agentes, gerar resumo executivo e produzir o relatório final multimodal em formato estruturado, incluindo indicadores de risco e necessidade de revisão humana especializada.
+    """
 
     caso_id = caso_info["caso_id"]
     pasta_processada = (caso_info["processed_path"])

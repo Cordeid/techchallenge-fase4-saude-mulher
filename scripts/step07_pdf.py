@@ -252,6 +252,11 @@ def markdown_para_pdf(
 # =========================
 
 def processar_caso(caso_info):
+    """
+    Responsável pela geração do relatório final em PDF.
+    O script converte o relatório multimodal em markdown para um documento PDF estruturado e formatado institucionalmente, utilizando ReportLab.
+    Implementa estilos tipográficos, tabelas, títulos, listas e organização visual do conteúdo, produzindo um relatório executivo consolidado da auditoria multimodal realizada pelo Sistema Hórus.
+    """
 
     caso_id = caso_info["caso_id"]
     pasta_processada = (caso_info["processed_path"])

@@ -199,6 +199,11 @@ PRONTUÁRIO
 # =========================
 
 def processar_caso(caso_info):
+    """
+    Responsável pela auditoria documental do prontuário médico.
+    O script realiza extração textual de PDFs clínicos e utiliza um protocolo especializado para avaliar qualidade documental, clareza, organização, humanização e aderência assistencial.
+    A análise é conduzida por LLM, gerando score protocolar, pontos positivos, falhas identificadas e resumo crítico do prontuário.
+    """
 
     caso_id = caso_info["caso_id"]
 

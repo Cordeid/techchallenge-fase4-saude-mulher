@@ -269,6 +269,12 @@ def salvar_json(dados, caminho):
         )
 
 def processar_caso(caso_info):
+    """
+    Responsável pela análise visual e comportamental da consulta.
+    O script extrai frames do vídeo, realiza detecção de pessoas com YOLOv8 e análise emocional facial com DeepFace, produzindo sinais visuais relacionados à postura corporal, expressões faciais e comunicação não verbal.
+    Os dados extraídos são interpretados por LLM com base em um protocolo especializado de humanização e postura clínica, gerando score visual, indicadores positivos e negativos e auditoria crítica do ambiente relacional da consulta.
+    """
+
     caso_id = caso_info["caso_id"]
     video = caso_info["video"]
     pasta_processada = caso_info["processed_path"]

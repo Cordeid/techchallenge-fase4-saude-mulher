@@ -9,6 +9,11 @@ from scripts.step07_pdf import processar_caso as step07_pdf
 
 
 def main():
+    """
+    Script principal de orquestração do Sistema Hórus.
+    Responsável por executar sequencialmente todo o pipeline multiagente, incluindo ingestão dos casos, auditoria de prontuário, análise comunicacional, análise vocal, análise visual, fusão multimodal e geração do relatório final em PDF.
+    Atua como coordenador central do fluxo de processamento, garantindo integração entre os agentes especializados e consolidação completa da auditoria multimodal.
+    """
 
     print("\n=== Ingestão de Casos ===")
     casos = step01_ingestao()
