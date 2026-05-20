@@ -1,4 +1,6 @@
-# Sistema Multiagente de Auditoria Protocolar para Consultas de Saúde da Mulher
+# Sistema Hórus
+
+## Sistema Multiagente de Auditoria Protocolar Multimodal para Consultas de Saúde da Mulher
 
 ## Pós-Tech FIAP — IA para Devs
 
@@ -10,7 +12,7 @@
 
 ## Nome do Projeto
 
-**FemAI Guardian — Sistema Multiagente de Auditoria Protocolar para Consultas de Saúde da Mulher**
+**Sistema Hórus - Sistema Multiagente de Auditoria Protocolar Multimodal para Consultas de Saúde da Mulher **
 
 ---
 
@@ -89,93 +91,124 @@ O projeto atende diretamente aos requisitos da Fase 4:
 
 # 5. Arquitetura Geral
 
-```txt
-                +----------------------+
-                |   Upload do Caso     |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                |  Agente de Ingestão  |
-                +----------+-----------+
-                           |
-          +----------------+----------------+
-          |                                 |
-          v                                 v
-+-------------------+         +-------------------------+
-| Agente de Áudio   |         | Agente de Vídeo         |
-+-------------------+         +-------------------------+
-| - extração áudio  |         | - extração frames       |
-| - transcrição     |         | - análise facial        |
-| - análise vocal   |         | - postura corporal      |
-| - emoções         |         | - comportamento         |
-+-------------------+         +-------------------------+
-          |                                 |
-          +----------------+----------------+
-                           |
-                           v
-               +------------------------+
-               | Agente Protocolar RAG |
-               +------------------------+
-               | - consulta protocolos |
-               | - verifica aderência  |
-               | - detecta desvios     |
-               +------------------------+
-                           |
-                           v
-               +------------------------+
-               | Agente Fusionador      |
-               +------------------------+
-               | - consolida análises   |
-               | - gera alertas         |
-               | - score de risco       |
-               +------------------------+
-                           |
-                           v
-               +------------------------+
-               | Dashboard / Relatório |
-               +------------------------+
+O Sistema Hórus utiliza uma arquitetura multiagente protocolar multimodal.
+
+A solução combina:
+
+- modelos tradicionais de IA;
+- modelos generativos;
+- protocolos estruturados;
+- fusão determinística de scores;
+- auditoria multimodal.
+
+A arquitetura foi organizada em agentes independentes especializados, permitindo separação entre:
+
+- percepção multimodal;
+- interpretação semântica;
+- avaliação protocolar;
+- fusão de resultados.
+
+---
+
+## Arquitetura
+
+```
+                         +----------------------+
+                         |   Upload do Caso     |
+                         +----------+-----------+
+                                    |
+                                    v
+
+                  +-----------------------------------+
+                  | Agente de Ingestão                |
+                  +-----------------------------------+
+                  | - valida arquivos                 |
+                  | - organiza diretórios             |
+                  | - estrutura o caso                |
+                  +----------------+------------------+
+                                   |
+         +-------------------------+--------------------------+--------------------------+
+         |                         |                          |                          |
+         v                         v                          v                          v
+
++-------------------+   +-------------------+   +-------------------+   +-------------------+
+| Agente            |   | Agente            |   | Agente            |   | Agente            |
+| Prontuário        |   | Comunicação       |   | Vocal/Emocional   |   | Vídeo             |
++-------------------+   +-------------------+   +-------------------+   +-------------------+
+| - leitura PDF     |   | - extração áudio  |   | - pitch vocal     |   | - extração frames |
+| - auditoria doc   |   | - transcrição     |   | - energia         |   | - DeepFace        |
+| - protocolo doc   |   | - auditoria texto |   | - ritmo           |   | - YOLOv8          |
+| - score clínico   |   | - protocolo com.  |   | - tensão vocal    |   | - postura corporal|
++-------------------+   +-------------------+   +-------------------+   +-------------------+
+
+                                    |
+                                    v
+
+                     +-----------------------------+
+                     | Agente Fusionador           |
+                     +-----------------------------+
+                     | - consolida scores          |
+                     | - integra análises          |
+                     | - classificação final       |
+                     | - revisão humana            |
+                     +-----------------------------+
+
+                                    |
+                                    v
+
+                     +-----------------------------+
+                     | Relatório Final             |
+                     +-----------------------------+
+                     | - markdown                  |
+                     | - PDF                       |
+                     | - score final               |
+                     | - auditoria multimodal      |
+                     +-----------------------------+
 ```
 
 ---
 
 # 6. Estrutura de Pastas
 
-```txt
+```
 /project
-
 │
 ├── /data_raw
 │   ├── caso_001
-│   │   ├── consulta.mp4
-│   │   ├── prontuario.pdf
-│   │   └── observacoes.txt
-│   │
+│   │   ├── consulta001.mp4
+│   │   ├── caso001.pdf
 │   └── caso_002
+│   │   ├── consulta002.mp4
+│   │   ├── caso002.pdf
+│   └── caso_003
+│   │   ├── consulta003.mp4
+│   │   ├── caso003.pdf
+│   └── caso_004
+│   │   ├── consulta004.mp4
+│   │   ├── caso004.pdf
+│   └── caso_005
+│   │   ├── consulta005.mp4
+│   │   ├── caso005.pdf
+│   └── caso_006
+│       ├── consulta006.mp4
+│       ├── caso006.pdf
 │
 ├── /data_processed
-│   ├── audios
-│   ├── transcricoes
-│   ├── frames
-│   ├── embeddings
-│   └── relatorios
 │
 ├── /protocolos
-│   ├── protocolo_consulta.md
-│   ├── protocolo_triagem.md
-│   └── protocolo_violencia.md
+│   ├── protocolo_comunicacao_vocal.md
+│   ├── protocolo_consulta_geral.md
+│   └── protocolo_postura_comunicacao_naoverbal.md
+│   └── protocolo_prontuario.md
 │
 ├── /scripts
 │   ├── step01_ingestao.py
-│   ├── step02_audio.py
-│   ├── step03_video.py
-│   ├── step04_rag.py
-│   ├── step05_fusao.py
-│   └── utils.py
-│
-├── /models
-│
-├── /dashboard
+│   ├── step02_prontuario.py
+│   ├── step03_comunicacao.py
+│   ├── step04_vocal.py
+│   ├── step05_video.py
+│   ├── step06_fusao.py
+│   └── step07_pdf.py
 │
 ├── requirements.txt
 │
@@ -186,215 +219,7 @@ O projeto atende diretamente aos requisitos da Fase 4:
 
 ---
 
-# 7. Fluxo dos Agentes
-
----
-
-# 7.1 Agente de Ingestão
-
-## Responsabilidades
-
-- validar arquivos;
-- verificar formatos;
-- criar estrutura do caso;
-- gerar resumo inicial;
-- organizar diretórios.
-
-## Tecnologias
-
-- Python;
-- pathlib;
-- ffmpeg;
-- OpenCV.
-
----
-
-# 7.2 Agente de Áudio
-
-## Responsabilidades
-
-### Extração de áudio
-
-- ffmpeg.
-
-### Transcrição
-
-- Whisper/OpenAI.
-
-### Análise emocional textual
-
-- hesitação;
-- ansiedade;
-- medo;
-- silêncio excessivo;
-- pausas longas.
-
-### Geração de resumo clínico
-
-- OpenAI GPT.
-
----
-
-## Possíveis análises
-
-- Paciente apresenta medo?
-- Há hesitação ao responder?
-- Há interrupções frequentes?
-- O médico utilizou abordagem acolhedora?
-
----
-
-## Tecnologias
-
-- OpenAI Whisper;
-- ffmpeg;
-- transformers;
-- OpenAI API.
-
----
-
-# 7.3 Agente de Vídeo
-
-## Responsabilidades
-
-### Processamento de vídeo
-
-- extração de frames;
-- detecção de pessoas;
-- análise facial.
-
-### Avaliação comportamental
-
-- postura corporal;
-- expressões faciais;
-- evasão visual;
-- inquietação;
-- desconforto.
-
----
-
-## Técnicas utilizadas
-
-### YOLOv8
-
-- detecção de pessoas;
-- detecção de objetos.
-
-### MediaPipe
-
-- landmarks faciais;
-- postura corporal.
-
-### DeepFace
-
-- emoções faciais.
-
----
-
-## Possíveis alertas
-
-- sinais visuais de ansiedade;
-- comportamento retraído;
-- desconforto contínuo;
-- baixa interação visual.
-
----
-
-# 7.4 Agente Protocolar (RAG)
-
-## Objetivo
-
-Comparar a consulta realizada com protocolos clínicos hospitalares.
-
----
-
-## Fluxo
-
-1. Transcrição é convertida em embeddings;
-2. Protocolos são indexados;
-3. Sistema recupera trechos relevantes;
-4. GPT compara consulta com protocolo.
-
----
-
-## Verificações
-
-- médico realizou acolhimento?
-- perguntas obrigatórias foram feitas?
-- houve investigação de sintomas?
-- houve explicação adequada?
-
----
-
-## Tecnologias
-
-- LangChain;
-- ChromaDB;
-- OpenAI Embeddings;
-- GPT-4o-mini / GPT-5-mini.
-
----
-
-# 7.5 Agente Fusionador
-
-## Objetivo
-
-Consolidar todas as análises em um relatório final.
-
----
-
-## Entrada
-
-- score emocional;
-- score visual;
-- aderência protocolar;
-- inconsistências;
-- alertas.
-
----
-
-## Saída
-
-```json
-{
-  "caso_id": "001",
-  "risco_geral": "MODERADO",
-  "aderencia_protocolar": 78,
-  "alertas": [
-    "Paciente apresentou hesitação frequente",
-    "Expressões faciais indicaram desconforto",
-    "Etapa obrigatória não identificada"
-  ]
-}
-```
-
----
-
-# 8. Pipeline de Processamento
-
-```txt
-Vídeo MP4
-   ↓
-Extração de áudio
-   ↓
-Transcrição Whisper
-   ↓
-Análise emocional textual
-   ↓
-Extração de frames
-   ↓
-Análise facial e corporal
-   ↓
-RAG protocolar
-   ↓
-Fusão multimodal
-   ↓
-Relatório final
-```
-
----
-
-# 9. Tecnologias Utilizadas
+# 7. Tecnologias Utilizadas
 
 | Tecnologia | Objetivo            |
 | ---------- | ------------------- |
@@ -413,64 +238,7 @@ Relatório final
 
 ---
 
-# 10. Dashboard
-
-## Funcionalidades
-
-- upload de casos;
-- visualização da transcrição;
-- alertas automáticos;
-- score de aderência;
-- resumo analítico;
-- visualização de riscos.
-
----
-
-## Exemplo
-
-```txt
-CASO #001
-RISCO: MODERADO
-
-✔ Consulta processada
-✔ Áudio analisado
-✔ Vídeo analisado
-
-ALERTAS:
-- Hesitação vocal detectada
-- Linguagem corporal retraída
-- Falha em etapa protocolar
-```
-
----
-
-# 11. Dados Utilizados
-
-## Estratégia adotada
-
-Serão utilizados dados sintéticos para fins acadêmicos.
-
----
-
-## Tipos de dados
-
-- vídeos simulados;
-- vozes sintéticas;
-- documentos fictícios;
-- consultas encenadas.
-
----
-
-## Justificativa
-
-- evitar exposição de dados reais;
-- evitar problemas éticos;
-- evitar violações da LGPD;
-- facilitar criação de cenários.
-
----
-
-# 12. Limitações
+# 8. Limitações
 
 O sistema:
 
@@ -481,7 +249,7 @@ O sistema:
 
 ---
 
-# 13. Possíveis Evoluções Futuras
+# 9. Possíveis Evoluções Futuras
 
 - integração com Azure Cognitive Services;
 - monitoramento em tempo real;
@@ -492,7 +260,7 @@ O sistema:
 
 ---
 
-# 14. Resultados Esperados
+# 10. Resultados Esperados
 
 Espera-se que o sistema:
 
@@ -504,7 +272,7 @@ Espera-se que o sistema:
 
 ---
 
-# 15. Conclusão
+# 11. Conclusão
 
 O projeto propõe um sistema multimodal baseado em Inteligência Artificial para auditoria protocolar de consultas voltadas à saúde da mulher.
 
@@ -518,7 +286,7 @@ A solução integra:
 
 O sistema busca apoiar equipes hospitalares na identificação precoce de situações de risco, desconforto psicológico e não conformidades clínicas, demonstrando o potencial da IA aplicada à saúde digital.
 
-# 16. Fontes do vídeos
+# 12. Fontes do vídeos
 
 - Caso 001 - Vídeo 4 - 23º TEMFC
   Link: https://www.youtube.com/watch?v=9aAqDc8YOyQ
